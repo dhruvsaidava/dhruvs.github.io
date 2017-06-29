@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Embedded Programming</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://bootswatch.com/united/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js"></script>
+     
+    
+</head>
+
+<body>
+   
+    <div id="header"></div>
+        <div class="row">
+         <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="row">
+           <h1>Embedded Programming</h1>
+  
+
+                    <p class="lead">
+                        by <a href="http://github.com/dhruvsaidava">Dhruv Saidava</a>
+                    </p>
+                    <hr>
+                </div>
+                <div class="row">
+                    <ol class="breadcrumb col-md-6">
+                        <li class="breadcrumb-item"><a href="/">Home</a>
+                        </li>
+                        <li class="breadcrumb-item"><a href="assignments.html">Assignments</a>
+                        </li>
+                        <li class="breadcrumb-item"><a href="assignments.html">Week 8</a>
+                        </li>
+                        
+                    </ol>
+                </div>
+                 
+                
+                
+
+                <hr>
+               
+               <!-- Panel next -->
+
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                         <ul class="dark-title">
+                         
+                            <li>Assignment</li>
+
+                        </ul>
+                      </div>
+                      <div class="panel-body">
+
+                       
+                        <p>
+
+
+                          read a microcontroller data sheet<br>
+   program your board to do something, with as many different programming languages <br>   
+      and programming environments as possible <br>
+   extra credit: experiment with other architectures <br>
+
+
+
+                        </p>
+
+
+
+
+                        <p>
+                             
+                        </p>
+                       </div>
+                    </div>
+                </div>
+            
+
+                <hr>
+            
+                
+            <!-- Panel next -->
+            <!-- Panel next -->
+
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                         <ul class="dark-title">
+
+                          
+
+                            <li>Microcontroller Datasheet</li>
+
+                        </ul>
+                      </div>
+                      <div class="panel-body">
+
+                       
+                        <p>
+
+                        <strong>  Learning after reading datasheet</strong><br>
+
+Any start with electronics can only done after reading datasheet. Each point is verly well explained. Its helps in understanding process and working of  micro controller . <br> 
+ <br>
+In Final project going to use in Satshakit in which its pinout and design play very important role. <br>
+
+                             I can make small wearable sensorbase toy which can be made through attiny controller. <br>
+
+
+I started with <a href="https://www.farnell.com/datasheets/1682209.pdf">https://www.farnell.com/datasheets/1682209.pdf </a> as this  belog to Arduino. It was easy for me to understand. <br>
+
+Then after I understand it pins in details and how it can be used. 
+
+  <center>  <img src="images/week8/pinout atty tiny44.png" alt="" width="500"> <br>
+
+    <br>
+    <hr>
+
+
+    <img src="images/week8/1.png" alt="" width="500"> <br>  </center>
+
+    <br>
+
+    After understanding that you need to understand its uploading. <br>
+
+Check <a href="http://highlowtech.org/?p=1695">Tutorial</a> for more in details <br>
+
+<br>
+<hr> <br>
+
+
+As Satsha kit is same as Arduino so below image was important to understand.
+
+<img src="images/week8/atmega328.png" alt="" width="500"> <br>
+You can find many sub type in IC so its best to check datasheet and then design.
+<br>
+
+Rembering pins with connection to Arduino creates problem and mistake. <br>
+
+Avishek and Gautam Guided me  and helped to find image explaining connection. <br>
+
+<img src="images/week8/arduinopins.jpeg" alt="" width="500"> <br>
+
+<br>
+
+
+
+Basic Connection for uploading program by using Arduino as ISP <br>
+Attiny 44--Arduino UNO <br>
+VCC-- 5V <br>
+GND--GND <br>
+MISO--Pin12 <br>
+MOSI--Pin11 <br>
+SCK--Pin13 <br>
+RST--Pin10 <br>
+
+
+                        </p>
+
+
+
+
+                        <p>
+
+                        Below are codes in Embedded Programing
+                        <br>
+
+                        <script src="https://gist.github.com/dhruvsaidava/7bcde25bd0ebfa41e8beafd079225623.js"></script>
+                        <br>
+
+                        <script src="https://gist.github.com/dhruvsaidava/1d779cc95cdaa5b6a97899b1afa20bb7.js"></script>
+
+                        <br>
+
+                        <script src="https://gist.github.com/dhruvsaidava/8eb4f4c30bf32f146db16fff03cd22ec.js"></script> <br>
+                        <br>
+
+
+
+                        </p>
+                       </div>
+                    </div>
+                </div>
+            
+
+                <hr>
+            
+                
+            <!-- Panel next -->
+               
+
+            <!-- Footer -->
+
+               <div id="footer" class="container"></div>
+       <script> 
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+ 
+</script>
+
+            
+    </div>
+   
+       
+
+<!-- Footer -->
+    </div>
+
+
+    <script type="text/javascript">
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+</body>
+</html>
