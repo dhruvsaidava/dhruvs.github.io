@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://bootswatch.com/united/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/v_tabs.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js"></script>
@@ -23,11 +23,10 @@
 
     <div class="container">
       <div class="jumbotron">
-        <h1>GIS Consultancy</h1> 
+        <h3>GIS Consultancy </h3> 
         <p>Leading Company In Canada woring in GIS for Data Collection, mapping and Database</p> 
       </div>
-      <p>This is the company which fullfill the customer requirement.</p> 
-      <p>Contact Us</p> 
+      
     </div>
 
 <div id="footer"></div>
@@ -35,7 +34,9 @@
 
 
  <script> 
-  $("#header").load("header.html"); 
+  $("#header").load("header.html",function() {
+    $("#li-contact").addClass('active')
+  });  
   $("#footer").load("footer.html"); 
  
 </script>
