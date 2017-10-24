@@ -64,11 +64,7 @@
                        
                         <p>
 
-   Read the material safety data sheet (MSDS)<br>
-      and technical data sheet (TDS) for the resins that you're using<br>
-   design and fabricate a 3D mold (~ft2)<br>
-      and produce a fiber composite part in it<br>
-   Design a 3D mold, machine it, and use it to cast parts<br>
+    Design a 3D mold, machine it, and use it to cast parts
 
                         </p>
 
@@ -91,7 +87,7 @@
                     <div class="panel panel-default">
                       <div class="panel-heading">
                          <ul class="dark-title">
-                            <li>Tray for Components</li>
+                            <li>Oval Shape Paper Weight</li>
                         </ul>
                       </div>
                       <div class="panel-body">
@@ -99,15 +95,10 @@
                        
                         <p>
 
-                        In this week I have designed something which can help in organize table . <br>
+                        In this week I was trying to make mold in which any access left material can be used to cast a Paper Weight and left over material get used.<br>
 
-                        <strong>Component Tray</strong> is best to make with composite will improve some design and make is more usefull for electronics slodering table.<br>
+                        <strong>Paper Weight</strong> is Oval Shaped Design which can be used for playing with by spinning it on table.<br>
 
-                        Table is always messy with tiny components and tray are also needed to b re arrange<br>
-
-                        So My Design is to make a Triangle shape tray which on conecting create polygon shape or keeping straight. <br>
-
-                        <img src="images/week12/magnetictray.png" alt=""><br>
 
 
 
@@ -150,14 +141,47 @@
                        
                         <p>
 
-                        <strong>CNC Cutting for Mould</strong> 
+                        <strong>CAD Design</strong> <br>
 
-                        Creating a 2D Shape  and creating pockets and Negative of that pockets to create a tray.<br>
+                        Creating a 3D <strong>.stl</strong> File to Mill using Roland MX 20 <br>
                         <br>
 
-                        Designing a 2D in rhino with a 3d Pocket can be cutted.<br>
+						<ul>
+							<li>By using Rhino we can create a 3D model of Oval shape</li>
+							<li>I have designed accorting to wall required for moulding casting</li>
+							<li>Creating 2 rectangle of desired wall thickness by Rectangle and Offset commands</li>
+							<li>Then create Elipisoid and triming it we can get desired design</li>
+							<li>export that file to .stl format.</li>
+						</ul>
+                       <br>
+
 
                        <br>
+
+                       <strong>Milling by MOdela MX 20</strong>
+<br>
+						I have used  90 mm X 70 mm X 40 mm Wax Block for Milling<br>
+
+						<br>
+						<ul>
+							<li>Using Double side tape I placed Block on Milling bed, So it get fixed and don't move while milling process</li>
+							<li>In Ubuntu > Open Terminal > enter command <strong>sudo fab</strong> >password <strong>fab</strong> a window will open</li>
+							<li>select mesh .stl as input and Modella MX 20 as out put</li>
+							<li>New window will have option of loading .stl file after loading click on make .PNG</li>
+							<li>select tool  <strong>Inches 1/8 Rough</strong> for rough cut going to use finish cut in next process</li>
+							<li>Click on make path it will show a tool path genrated</li>
+							<li>then set X axis - Y axis ( Note this you need same cordinated to start in next Finish cut ) </li>
+							<li>Make RML</li>
+							<li>Send and Start Milling.</li>
+							<li>Observe Path if you find something worng stop machine.</li>
+							<li>After process you need to change tool to finish cut</li>
+							<li>Again process will happen with ball nose milling bit to have finishing surface.</li>
+						</ul> 
+
+                        <br>
+
+                        
+
                         <br>
 
                         <br>
