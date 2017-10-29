@@ -11,3 +11,12 @@
       </ul>
    </div>
 </nav>
+<script type="text/javascript">
+   $(".dropdown-menu").find('li').each(function() {
+      var $this = $(this);
+      if( document.location.href.includes( $this.children(0).attr('href') ) ){
+         $this.addClass('active');
+         return false;
+      }
+   })
+</script>
