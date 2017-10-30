@@ -61,6 +61,53 @@
                </div>
                <div class="panel-body">
                   <p>
+                  <strong>Tools & Software</strong><br>
+
+                  <a href="https://www.autodesk.com/products/eagle/overview">Eagle</a><br>
+                  Designing Schmetic and Board for PCB.
+
+                  <a href="http://support.rolanddga.com/_layouts/rolanddga/productdetail.aspx?pm=mdx-20">Modela MDX-20 3D Milling Machine</a> <br>
+                  Milling of pcb (png to milling)
+
+
+                  <strong>RGB</strong><br>
+
+                  <br>
+                  I made this RGB as output so it can be used in Network Communication week also. In this output circuit I have used Atty Tiny 44. 
+
+                  SMD Components <br>
+
+                  Attytiny 44 <br>
+                  capcitor 1Uf <br>
+                  resistor <br>
+                  header pin <br>
+                  rgb (cathode) <br>
+
+
+                  <strong>Step by Step Process</strong>
+
+                  <ul>
+                     <li>Creating schmetic in Eagle by adding components</li>
+                     <li>Connecting them and making circuit</li>
+                     <li>Shifting to Board</li>
+                     <li>Setting postion of components as required</li>
+                     <li>Routing it step by step</li>
+                     <li>Rearranging to achive 100% routing</li>
+                     <li>Using Ratsnet and Auto routing options</li>
+                     <li>DRC rule check</li>
+                     <li>Changing Layers for exporting to Image </li>
+                     <li>Check no extra layer should be added</li>
+                     <li>Use 400 dpi and monochrome</li>
+                     <li>PNG file would be exported to location</li>
+                     <li>Milling file is ready but we still need cutting traces for border</li>
+                     <li>Open file to Photoshop Convert it to RGB </li>
+                     <li>In my case rectangle so I increased cavas size</li>
+                     <li>Created two different PNG 1. Milling 2. Cutting Traces</li>
+
+                  </ul>
+
+
+
                   <img src="images/week10/w10-1-ratsnet.png" width="100%" alt=""><br>
                   text <br>
                   <img src="images/week10/w10-2-autorouter.png" width="100%" alt=""><br>
@@ -91,12 +138,55 @@
          </div>
 
          </div>
+        
+         
+         <hr>
          <!-- Panel next -->
+         <!-- Panel next -->
+         <div class="panel-group">
+            <div class="panel panel-default">
+               <div class="panel-heading">
+                  <h4 class="dark-title">
+                  Output Device in Final projectr</ul>
+               </div>
+               <div class="panel-body">
+                  <p>
+                     In Final project need was to teach students about different output devices. <br>
+                     LCD which can print TEXT and Sensor reading values will be perfect for practical with students. <br>
+                     <br>
+
+                     Ultrasonic ( Distance ) and Servo as Wheel for Obstacle Avoider <br>
+
+                     <br>
+
+                     basic sensor and LCD display for  showing Sensor Value <br>
+ 
+
+
+                     As One of basic sensor  Ultrasonic sensor which is taking input and according to that input Servo motor runs. <br>
+
+                     Logic of Output device is when Distance of Ultrasonic comes as less than 7 cm. <br>
+
+                     Right Servo motor will move backward and left will move forward. which output is turning right . <br>
+                     In this project Satsha kit was used controlling output. <br>
+                     <br>
+                     <br>
+                  <h2>Code for controlling Servo using Ultrasonic sensor </h2>
+                  <script src="https://gist.github.com/dhruvsaidava/1d779cc95cdaa5b6a97899b1afa20bb7.js"></script>
+                  </p>
+                  <p>
+                  </p>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <!-- Panel next -->
+          <!-- Panel next -->
          <div class="panel-group">
             
             <div class="panel panel-default">
                <div class="panel-heading">
-                  <h4 class="dark-title">LED Array</h4>
+                  <h4 class="dark-title">LED Array from FAB Academy</h4>
                </div>
                <div class="panel-body">
                   <p>
@@ -113,36 +203,6 @@
                      <br>
                      Input as Ultrasonic and output as LCD
                      
-                  </p>
-                  <p>
-                  </p>
-               </div>
-            </div>
-         </div>
-         <hr>
-         <!-- Panel next -->
-         
-         <hr>
-         <!-- Panel next -->
-         <!-- Panel next -->
-         <div class="panel-group">
-            <div class="panel panel-default">
-               <div class="panel-heading">
-                  <h4 class="dark-title">
-                  Output Device as LCD and Servo Motor</ul>
-               </div>
-               <div class="panel-body">
-                  <p>
-                     In Final project need was to teach students about different output devices. <br>
-                     LCD which can print TEXT and Sensor reading values will be perfect for practical with students. <br>
-                     As One of basic sensor which is used is Ultrasonic sensor which is taking input and according to that input Servo motor runs. <br>
-                     Logic of Output device is   when Distance of Ultrasonic comes as less than 7 cm. <br>
-                     Right Servo motor will move backward and left will move forward. which output is turning right . <br>
-                     In this project Satsha kit was used controlling output. <br>
-                     <br>
-                     <br>
-                  <h2>Code for controlling Servo using Ultrasonic sensor </h2>
-                  <script src="https://gist.github.com/dhruvsaidava/1d779cc95cdaa5b6a97899b1afa20bb7.js"></script>
                   </p>
                   <p>
                   </p>
