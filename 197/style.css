@@ -8,8 +8,30 @@ body {
 .double-height{
 	line-height: 130%!important;
 }
+.show-on-med{
+		display: none;
+}
 @media (max-width:768px){
 	.container-main{
 		margin-top: 100px!important;
 	}
+	.lead, .breadcrumb, h1{
+		margin-left: 15px!important;
+	}
+	.breadcrumb{
+		width: 90%;
+	}
+	.hide-on-med{
+		display: none!important;
+	}
+	.show-on-med{
+		display: block!important;
+	}
+}
+
+.nav-fall > a {
+	color: white;
+}
+.nav-fall {
+	margin-top: 20px!important;
 }
