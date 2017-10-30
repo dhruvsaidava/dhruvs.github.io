@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+   <title>SatshaKit</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://bootswatch.com/united/bootstrap.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.css">
+   <link rel="stylesheet" type="text/css" href="./style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js"></script>
+</head>
+<body>
+   <div id="header"></div>
+   <div class="container container-main">
+   <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+         <div class="row">
+            <h1>Information of SatshaKit </h1>
+            <p class="lead">
+               by <a href="http://github.com/dhruvsaidava">Dhruv Saidava</a>
+            </p>
+            <hr>
+         </div>
+         <!-- Panel next -->
+         <div class="panel-group">
+            <div class="panel panel-default">
+               <div class="panel-heading">
+                  <h4>Fab Academy Tutorials &amp; References</h4>
+               </div>
+               <div class="panel-body">
+			<h1 align="center"><a href="#satshakit" aria-hidden="true" class="anchor" id="user-content-satshakit">
+			</a>satshakit</h1>
+			<p align="center">
+			    <img src="https://raw.githubusercontent.com/satshakit/satshakit/master/media/readme/satshakites.jpg" width="70%" >
+			</p>
+			<div align="center">
+			    <i>An improved &amp; fabbable 100% Arduino IDE/libraries compatible board.</i>
+			</div>
+
+			<hr>
+			<h3>What is satshakit?</h3><br>
+			<p>satshakit is a <strong>100% Arduino IDE  and libraries compatible</strong>, fabbable and open source board, and also an improved version of <a href="http://fabacademy.org/archives/2015/doc/projects/fabkit-0.4.html">Fabkit</a>.</p>
+			<p>Main <strong>improvements and features</strong> over Fabkit are:</p>
+			<ul>
+			    <li><strong>16Mhz</strong> instead of 8Mhz</li>
+			    <li><strong>crystal</strong> instead of resonator</li>
+			    <li><strong>costs less</strong> (7-9 euro vs 13 euro)</li>
+			    <li>100% compatible with <strong>default Arduino IDE</strong> (satshakit is recognized as Arduino UNO)</li>
+			    <li>ADC6/7 connected instead of ADC6/7 not connected (satshakit laser and cnc)</li>
+			    <li>larger space to easy soldering (satshakit laser and cnc)</li>
+			</ul>
+			<p>Find here all the available satshakit boards: <strong><a href="https://github.com/satshakit">satshakit github organization</a></strong>
+			</p>
+
+			<hr>
+			<h3>Getting Started</h3>
+			<br>
+			<p>A satshakit board is <strong>totally like an Arduino board</strong>, thus is possible to use the Arduino IDE without any modification. When you finish solder satshakit, you're ready to program it. If you want to use satshakit as an Arduino, you first need to <strong>upload Arduino bootloader</strong>. This will also set the ATmega328P fuses as the same of an Arduino UNO. To do this you need to use a <strong>programmer</strong>, for example another Arduino or FabISP. If you plan to program a satshakit with an Arduino, be sure to upload the <strong>Arduino as ISP skecth</strong> before connecting the satshakit to it.</p>
+			<p>Here are the connection schemas to program <strong>satshakit laser</strong> or <strong>satshakit cnc</strong> with an Arduino as ISP or with a FabISP:</p>
+				<hr>
+			<p>
+			    	<img src="https://raw.githubusercontent.com/satshakit/satshakit/master/media/satshakit_laser/satshakit_laser_arduino_programming.png" width="100%" >
+			</p>
+			<hr>
+			<p>
+			    	<img src="https://raw.githubusercontent.com/satshakit/satshakit/master/media/satshakit_laser/satshakit_laser_fabisp_programming.png" width="100%" >
+			</p>
+			<hr>
+			<p>Once everything is connected, follow these steps to upload Arduino bootloader:</p>
+			<ol>
+			    <li>open Arduino IDE</li>
+			    <li>select proper programmer (for example Arduino as ISP or USBtinyISP)</li>
+			    <li>select Arduino UNO as board</li>
+			    <li>click on tools-&gt;Burn Bootloader</li>
+			</ol>
+
+			<hr>
+			<p>With a satshakit cnc or satshakit laser you can use an <strong>FTDI USB cable to upload and use you favourite sketch</strong> without the need to use a programmer anymore.</p>
+			<p>Here is the connection schema to program a satshakit using the FTDI cable:</p>
+			<p>
+			    	<img src="https://raw.githubusercontent.com/satshakit/satshakit/master/media/satshakit_laser/satshakit_laser_programming_FTDI.jpg" width="100%" >
+			</p>
+			<br>
+			<p>Remember that if you don't have an FTDI cable you always need a programmer, and to select <strong>File-&gt;Upload using a programmer</strong> to upload the code to satshakit.</p>
+			<hr>
+			<p>To use a satshakit like an Arduino, here is the Arduino pinout on satshakit cnc or satshakit laser:</p>
+			<p>
+			    <img src="https://raw.githubusercontent.com/satshakit/satshakit/master/media/satshakit_laser/satshakit_laser_arduino_pin_mapping.png" width="100%" >
+			</p>
+			<h3>Authors</h3>
+			<ul>
+			    <li>Daniele Ingrassia and <a href="http://www.eng.it">Engineering Ingegneria Informatica</a>
+			    </li>
+			</ul>
+
+			<h3>License</h3>
+			<p>Work of Satshakit is licensed under the terms of Attribution-NonCommercial-ShareAlike 4.0 International (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>).</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+    <div id="footer" class="container" style="margin-top: 80px"></div>
+         <script> 
+            $("#header").load("header.html"); 
+            $("#footer").load("footer.html"); 
+         </script>
+      </div>
+      <!-- Footer -->
+   </div>
+   <script type="text/javascript">
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+          event.preventDefault();
+          $(this).ekkoLightbox();
+      });
+   </script>
+</body>
+</html>
+</body>
