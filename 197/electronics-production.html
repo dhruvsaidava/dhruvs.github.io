@@ -43,8 +43,7 @@
             <div class="panel-body">
                <p>
                <ul>
-                  <a href="http://academy.cba.mit.edu/classes/computer_design/index.html">Computer-Aided Design</a>
-                  <hr>
+                  <a href="http://academy.cba.mit.edu/classes/electronics_production/index.html">Electronics Production</a>
                </ul>
                </p>                        
             </div>
@@ -99,30 +98,59 @@
                   <ul>
                      <li>PNG image is required for milling </li>
                      <li>We have Linux laptop connected with Milling Machine</li>
-                     <li>Open Terminal > sudo fab</li>
-                     <li><img src="images/mil/sudofab.png" height="400" alt=""></li>
-                     <li>After Opening you have to select type of image which is PNG and select Machine which is to be used </li>
-                     <li><img src="images/mil/select.png"  alt=""></li>
-                     <li>Then Load PNG to software and make a path ( You can change offset settings)</li>
-                     <li><img src="images/mil/load.png" height="400" alt=""></li>
-                     <li>After Making Path you have to adjust machine according to start point which can be done from X and Y axis distance setting</li>
-                     <li><img src="images/mil/move.png" height="400" alt=""></li>
-                     <li>After you done with start point you can Create RML and load it to Machine</li>
-                     <li><img src="images/mil/rml.png" height="400" alt=""></li>
+                     <li>
+                        Open Terminal > sudo fab <br>
+                        <img src="images/mil/sudofab.png" width="100%" alt="">
+                     </li>
+                     <li>After Opening you have to select type of image which is PNG and select Machine which is to be used <br><img src="images/mil/select.png"  alt=""></li>
+                     <li>Then Load PNG to software and make a path ( You can change offset settings)
+                        <br><img src="images/mil/load.png" width="100%" alt=""></li>
+                     <li>After Making Path you have to adjust machine according to start point which can be done from X and Y axis distance setting<br><img src="images/mil/move.png" width="100%" alt=""></li>
+                     <li>After you done with start point you can Create RML and load it to Machine<br><img src="images/mil/rml.png" width="100%" alt=""></li>
                   </ul>
                   <hr>
                   <center>
                      <h2>Soldering SMD Components</h2>
                   </center>
                   <div align="center">
-                     <img src="images/isp/soldering.jpeg" height="400"  alt="">
-                     <img src="images/isp/fabisp.jpeg" height="400" alt=""> <br>
-                     <img src="images/isp/loading.jpeg" height="400" alt=""><br>
+                     <img src="images/isp/soldering.jpeg" height="500"  alt="">
+                     <img src="images/isp/fabisp.jpeg" height="500" alt=""> <br>
+                     <img src="images/isp/loading.jpeg" width="100%" alt=""><br>
                   </div>
                   <hr>
-                  <center>
-                     <h2>Programing ISP ( MAC)</h2>
-                  </center>
+                  <hr>
+               </div>
+            </div>
+         </div>
+          <div class="panel-group">
+            <div class="panel panel-default">
+               <div class="panel-heading">
+                  <h4 class="dark-title">Components required for the FabISP board</h4>
+               </div>
+               <div class="panel-body">
+                  <ul>
+                     <li>ATTiny 44 microcontroller- Qty:01</li>
+                     <li>Capacitor 1uF - Qty:01</li>
+                     <li>Capacitor 10 pF - Qty:02</li>
+                     <li>Resistor 100 ohm - Qty:02</li>
+                     <li>Resistor 499 ohm - Qty:01</li>
+                     <li>Resistor 1K ohm - Qty:01</li>
+                     <li>Resistor 10K - Qty:01</li>
+                     <li>6 pin  male header - Qty:01</li>
+                     <li>USB connector - Qty:01</li>
+                     <li>20MHz Cystal - Qty:01</li>
+                     <li>Zener Diode 3.3 V - Qty:02</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div class="panel-group">
+            <div class="panel panel-default">
+               <div class="panel-heading">
+                  <h3>Programing ISP (MAC)</h3>
+               </div>
+               <div class="panel-body">
                   Installation for MAC 
                   As Home Brew is already installed<br>
                   we have to install Crosspack ( It will require to over ride your Mac Firewall as it is not from Verified developer)<br>
@@ -142,37 +170,13 @@
                      <li>Go to apple icon > About this Mac> System Profiler > Hardware > USB > Hub</li>
                      <li>FABISP is listed in USB then it successfully Done</li>
                   </ul>
-                  <div align="center"><img src="images/isp/installingcross.png" height="400" alt=""><br>
-                     <img src="images/isp/1.png" height="400"  align="center" alt=""><br>
-                     <img src="images/isp/2.png" height="400"   alt=""><br>
-                     <img src="images/isp/3.png" height="400"   alt=""><br>
-                     <img src="images/isp/4.png" height="400"   alt=""><br>
-                     <img src="images/isp/usb.png" height="400" alt=""><br>
+                  <div align="center"><img src="images/isp/installingcross.png" width="100%" alt=""><br>
+                     <img src="images/isp/1.png" width="100%"  align="center" alt=""><br>
+                     <img src="images/isp/2.png" width="100%"   alt=""><br>
+                     <img src="images/isp/3.png" width="100%"   alt=""><br>
+                     <img src="images/isp/4.png" width="100%"   alt=""><br>
+                     <img src="images/isp/usb.png" width="100%" alt=""><br>
                   </div>
-                  <hr>
-               </div>
-            </div>
-         </div>
-         <hr>
-         <div class="panel-group">
-            <div class="panel panel-default">
-               <div class="panel-heading">
-                  <h4 class="dark-title">Components required for the FabISP board</h4>
-               </div>
-               <div class="panel-body">
-                  <ul>
-                     <li>ATTiny 44 microcontroller- Qty:01</li>
-                     <li>Capacitor 1uF - Qty:01</li>
-                     <li>Capacitor 10 pF - Qty:02</li>
-                     <li>Resistor 100 ohm - Qty:02</li>
-                     <li>Resistor 499 ohm - Qty:01</li>
-                     <li>Resistor 1K ohm - Qty:01</li>
-                     <li>Resistor 10K - Qty:01</li>
-                     <li>6 pin  male header - Qty:01</li>
-                     <li>USB connector - Qty:01</li>
-                     <li>20MHz Cystal - Qty:01</li>
-                     <li>Zener Diode 3.3 V - Qty:02</li>
-                  </ul>
                </div>
             </div>
          </div>
