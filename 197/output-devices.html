@@ -108,30 +108,24 @@
 
 
 
-                  <img src="images/week10/w10-1-ratsnet.png" width="100%" alt=""><br>
+                  <img src="images/week10/w10-1-ratsnet.png" width="49%" alt="">
+                  <img src="images/week10/w10-2-autorouter.png" width="49%" alt=""><br>
                   text <br>
-                  <img src="images/week10/w10-2-autorouter.png" width="100%" alt=""><br>
-                  text <br>
-                  <img src="images/week10/w10-3-routingstart.png" width="100%" alt=""><br>
-                  text <br>
-                  <img src="images/week10/w10-4-routingdone.png" width="100%" alt=""><br>
+                  <img src="images/week10/w10-3-routingstart.png" width="49%" alt="">
+                  <img src="images/week10/w10-4-routingdone.png" width="49%" alt=""><br>
                   text <br>
                   
-                  <img src="images/week10/w10-5-routedcircuit1.png" width="100%" alt=""><br>
+                  <img src="images/week10/w10-5-routedcircuit1.png" width="49%" alt="">
+                  <img src="images/week10/w10-6-routedcircuit2.png" width="49%" alt=""><br>
                   text <br>
-                  <img src="images/week10/w10-6-routedcircuit2.png" width="100%" alt=""><br>
+                  <img src="images/week10/w10-7-routedcircuit3.png" width="49%" alt="">
+                  <img src="images/week10/w10-8-routedcircuit4.png" width="49%" alt=""><br>
                   text <br>
-                  <img src="images/week10/w10-7-routedcircuit3.png" width="100%" alt=""><br>
+                  <img src="images/week10/w10-9-routedcircuit5.png" width="49%" alt="">
+                  <img src="images/week10/w10-10-drcmenu.png" width="49%" alt=""><br>
                   text <br>
-                  <img src="images/week10/w10-8-routedcircuit4.png" width="100%" alt=""><br>
-                  text <br>
-                  <img src="images/week10/w10-9-routedcircuit5.png" width="100%" alt=""><br>
-                  text <br>
-                  <img src="images/week10/w10-10-drcmenu.png" width="100%" alt=""><br>
-                  text <br>
-                  <img src="images/week10/w10-11-drccheck.png" width="100%" alt=""><br>
-                  text <br>
-                  <img src="images/week10/w10-12-drcnoerror.png" width="100%" alt=""><br>
+                  <img src="images/week10/w10-11-drccheck.png" width="49%" alt="">
+                  <img src="images/week10/w10-12-drcnoerror.png" width="49%" alt=""><br>
                   text <br>
                </p>
             </div>
@@ -171,7 +165,7 @@
                      In this project Satsha kit was used controlling output. <br>
                      <br>
                      <br>
-                  <h2>Code for controlling Servo using Ultrasonic sensor </h2>
+                  <h3>Code for controlling Servo using Ultrasonic sensor </h3>
                   <script src="https://gist.github.com/dhruvsaidava/1d779cc95cdaa5b6a97899b1afa20bb7.js"></script>
                   </p>
                   <p>
@@ -193,12 +187,10 @@
                      Go through lecture    <br>
                      <a href="http://academy.cba.mit.edu/classes/output_devices/index.html">http://academy.cba.mit.edu/classes/output_devices/index.html</a>
                      <br>
+                     <img src="http://academy.cba.mit.edu/classes/output_devices/array/hello.array.44.png" alt="" height="350">
+                     <img src="images/week10/ledarray.jpg" alt="" height="320">
                      Examples are Given. <br>
                      LED array Files and sch is given there.
-                     <br>
-                     <img src="http://academy.cba.mit.edu/classes/output_devices/array/hello.array.44.png" alt="" width="100%"><br>
-                     <br>
-                     <img src="images/week10/ledarray.jpg" alt="" width="100%">
                      Wanted to used LED array for final year but pin and board design was getting more complex.  Then I shifted to  Ultrasonic as input and Servo as output.
                      <br>
                      Input as Ultrasonic and output as LCD
@@ -226,6 +218,10 @@
           event.preventDefault();
           $(this).ekkoLightbox();
       });
+      $('img').click(function(){
+         $(this).css('cursor','pointer');
+         window.open($(this).attr('src'));
+      })
    </script>
 </body>
 </html>
