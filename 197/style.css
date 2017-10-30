@@ -1,5 +1,6 @@
 body {
 	overflow-x: hidden;
+	text-align: justify;
 }
 .navbar{
 	border-radius: 0px!important;
