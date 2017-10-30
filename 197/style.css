@@ -11,6 +11,9 @@ body {
 .show-on-med{
 		display: none;
 }
+h1{
+	text-shadow:0 2px 2px rgba(0, 0, 0, 0.2);
+}
 @media (max-width:768px){
 	.container-main{
 		margin-top: 100px!important;
@@ -28,10 +31,18 @@ body {
 		display: block!important;
 	}
 }
-
+.panel-default{
+	box-shadow : 0 1px 2px rgba(0, 0, 0, 0.2)
+}
 .nav-fall > a {
 	color: white;
 }
 .nav-fall {
 	margin-top: 20px!important;
+}
+
+img{
+	padding: 15px;
+	/*border: 5px solid #FFCC00;*/
+	/*box-shadow : 0 2px 4px rgba(0, 0, 0, 0.3)*/
 }
