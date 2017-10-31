@@ -33,12 +33,7 @@
                </li>
             </ol>
          </div>
-         <div class="row">
-            <hr>
-            <a href="" data-toggle="lightbox" data-title="" data-footer="">
-            <img alt="" class="img-responsive" src="" title="">
-            </a>
-         </div>
+
          <hr>
          <!-- Panel next -->
          <div class="panel-group">
@@ -48,7 +43,6 @@
                </div>
                <div class="panel-body">
                   <p>
-                  <ul>
                      <a href="http://academy.cba.mit.edu/classes/interface_application_programming/index.html" target="_blank">Interface and Application Programming</a>
                      <hr>
                      <p><a href="http://archive.fabacademy.org/archives/2017/doc/puredataSerial.html" target="_blank">A simple serial stub patch for Pure Data</a></p>
@@ -58,7 +52,7 @@
                      <p><a href="http://archive.fabacademy.org/archives/2017/doc/wxpython.html" target="_blank">Introduction to wxPython, and reading and drawing serial data with wxPython</a></p>
                      <p><a href="http://archive.fabacademy.org/archives/2017/doc/python-kivy.html" target="_blank">Reading serial data with Kivy (Python)</a></p>
                      <p><a href="http://archive.fabacademy.org/archives/2017/doc/WebSocketConsole.html" target="_blank">Python Web-based Serial Console using WebSockets</a></p>
-                  </ul>
+                  
                   </p>                        
                </div>
             </div>
@@ -72,9 +66,7 @@
                </div>
                <div class="panel-body">
                   <p>
-                  <ul>
-                     <li></li>
-                  </ul>
+                  
                   write an application that interfaces with an input and/or output device that you made,<br>
                   comparing as many tool options as possible
                   </p>
@@ -92,18 +84,73 @@
                   <h4 class="dark-title">Bluetooth controlled bot</h4>
                </div>
                <div class="panel-body">
-                  <p>
-                     In this I have used HC-05 Bluetooth which is connected to Satshakit. <br>
-                     Bluetooth connected to bot is working as reviver to signal from mobile which controls two 360 servo motors. <br>
-                     Makerbot was working on bluetooth but having problem like connected once then will only take one command. <br>
-                     Bot will not respond to next command until it is disconnected and connected again. <br> 
-                     Application would be normally available to Play store. <br>
-                     After facing problem it was required to make individual application to control Bot . <br> 
-                  </p>
-                  <p>
-                     <strong>Code of Bluetooth control Bot.</strong> <br>
-                     <script src="https://gist.github.com/dhruvsaidava/7bcde25bd0ebfa41e8beafd079225623.js"></script>
-                  </p>
+                 
+     <h4>Procesing</h4>
+     <br>
+
+     <p>For interface and application programming, I decided to use Processing to generate a graphic from output generated from distance sensor.</p>
+     <p> I tried to show the proximity of object to the distance sensor by remapping the output derived from distance sensor to a graphical representation of 2 lines, where 1 line is constant, indicating the location of distance sensor and the other line moves indicating the movement of the object around the sensor.</p>
+     <p>In terms of electronics, I used the same board that I made for Networking. It was already programmed to give output in terms of distance in centimeters. I tried to make a processing code to interpret this number and move the line accordingly.</p>
+     
+     <img width="100%" src="images/w16x/screenshot 2017-06-26 192052.jpg">
+     <p>Here is a range of screenshots demonstrating the process I tried.</p>
+    
+     <img width="100%" src="images/w16x/screenshot 2017-05-21 180935.jpg">
+    <p>First step was to set up the screen size and background.</p>
+       
+     
+         <img width="100%" src="images/w16x/screenshot 2017-05-21 181518.jpg">
+     <p>And here I generated the vertical constant line. However , processing considers 0,0 at top left, So I had to change the line co-ordinates.</p>
+       
+        
+        <img width="100%" src="images/w16x/screenshot 2017-05-21 181556.jpg">
+        <p>Here is the changed output.</p>
+        <img width="100%" src="images/w16x/screenshot 2017-05-21 181645.jpg">
+        <p>Next I made a constant horizontal line.</p>
+       
+         <img width="100%" src="images/w16x/screenshot 2017-05-21 181708.jpg">
+         <p>Changing the colour of the bottom line.</p>
+       
+         <img width="100%" src="images/w16x/screenshot 2017-05-21 181940.jpg">
+        <p>Next I created a vertical line, it is fixed at the moment, however I intend to change its co-ordinates based on the data generated from Distance sensor.</p>
+       
+         <img width="100%" src="images/w16x/screenshot 2017-05-21 182751.jpg">
+         <p>Importing Serial I/O library.</p>
+       
+         <img width="100%" src="images/w16x/screenshot 2017-05-21 182810.jpg">
+        <p>Importing Serial I/O library.</p>
+       
+         <img width="100%" src="images/w16x/screenshot 2017-05-21 183124.jpg">
+        <p>Adding steps to receive data from serial port.</p>
+
+         <img width="100%" src="images/w16x/screenshot 2017-05-21 184045.jpg">
+        <p>Adding the code to read port name</p>
+       
+       
+         <img width="100%" src="images/w16x/screenshot 2017-05-21 184216.jpg">
+        <p>There were some small errors throughout the process.</p>
+       
+        <p>Adding variable for co-ordinates of line.</p>
+         <img width="100%" src="images/w16x/screenshot 2017-05-21 190553.jpg">
+        <p>I had some issues converting the distance output to integer, so trying different things to fix it.</p>
+         <img width="100%" src="images/w16x/screenshot 2017-05-21 191035.jpg">
+        <p>Errors</p>
+       
+       
+         <img width="100%" src="images/w16x/screenshot 2017-05-21 191259.jpg">
+        <p>Defining "x" as float</p>
+       
+         <img width="100%" src="images/w16x/screenshot 2017-05-21 191328.jpg">
+        <p>Finally the code was working</p>
+        <p>I could move the line using the output from distance sensor.</p>
+       
+         <img width="100%" src="images/w16x/screenshot 2017-06-26 195058.jpg">
+      
+    
+     <p>I used FTDI cable to connect the board to the computer to transfer output distance values from distance sensor board to Processing. <img width="100%" class="position_content" src="images/w16x/whatsapp image 2017-06-28 at 115127 am (4).jpg">
+    
+   
+  
                </div>
             </div>
          </div>

@@ -102,7 +102,7 @@ With help from Gautam and Mohit, I designed a Distance sensor board. I had earli
 <p>
    
 <p>
-The first step was to design the board in Eagle. I took my old board and added Rx,Tx,VCC and GND pins. Over all the board had following components:
+The first step was to design the board in Eagle. I took the old board and added Rx,Tx,VCC and GND pins. Over all the board had following components:
 </p>
    <ul>
       
@@ -154,7 +154,7 @@ However, when the code was run later using networking, it did not work. Then I r
    Next I used an FTDI cable and connected its Rx,Tx,VCC and GND to the input device board and the networking was established.   
 </p>
 
-Next, to add more boards, I decided to add more values from my input device.
+Next, to add more boards, I decided to add more values from the input device.
 The idea was to allow more boards to be connected. For this, one option is to call each board by giving different addresses from the computer, and the next option, which I chose, was to allow the input device to call for different boards and also define the colours of RGB led in the first board.
 
 <img src="images/design.png" width="100%">
@@ -175,12 +175,12 @@ Here is how it looked like.</p>
 <img src="images/w15x/scrnsht2.jpg" width="100%">
 
 <p>
-Next step was to write a code for "hello echo" led to light-up when it gets signal "3". Here is how it looked like.  The idea was to see the LED light up once you give the value "3" from the computer. Later on when all the boards are connected, this value will come from my input device.
+Next step was to write a code for "hello echo" led to light-up when it gets signal "3". Here is how it looked like.  The idea was to see the LED light up once you give the value "3" from the computer. Later on when all the boards are connected, this value will come from the input device.
 </p>
 <p>
    
-I checked if my code was working individually. It would give me red, green, blue outputs for 0,1,2 respectively. 
-Finally, since all individual codes were uploaded, I connected all 3 boards and FTDI, to check if my connections were working.
+I checked if the code was working individually. It would give me red, green, blue outputs for 0,1,2 respectively. 
+Finally, since all individual codes were uploaded, I connected all 3 boards and FTDI, to check if the connections were working.
 </p>
                </div>
             </div>
