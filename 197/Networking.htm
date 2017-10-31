@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)http://archive.fabacademy.org/archives/2017/fablabcept/students/177/networking.html -->
+<html class="html js wf-cardo-n4-active wf-cardo-i4-active wf-cardo-n7-active wf-active gr__archive_fabacademy_org" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <script type="text/javascript">
+   if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["jquery-1.8.3.min.js", "museutils.js", "jquery.musemenu.js", "jquery.watch.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "networking.css"], "outOfDate":[]};
+</script>
+  
+  
+  <meta name="generator" content="2015.0.0.309">
+  <title>Networking</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./Networking_files/site_global.css">
+  <link rel="stylesheet" type="text/css" href="./Networking_files/master_a-master.css">
+  <link rel="stylesheet" type="text/css" href="./Networking_files/networking.css" id="pagesheet">
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/iefonts_networking.css?4220964660"/>
+  <![endif]-->
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   document.documentElement.className += ' js';
+var __adobewebfontsappname__ = "muse";
+</script><script type="text/javascript" src="./Networking_files/is"></script>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/cardo:n4,n7,i4:default.js" type="text/javascript">\x3C/script>');
+</script><link rel="stylesheet" href="./Networking_files/l" media="all"><script src="./Networking_files/cardo-n4,n7,i4-default.js" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+  <script src="scripts/html5shiv.js?4241844378" type="text/javascript"></script>
+  <![endif]-->
+   </head>
+ <body data-gr-c-s-loaded="true">
+
+  <div class="clearfix" id="page"><!-- column -->
+   <div class="position_content" id="page_position_content">
+    <div class="clearfix colelem" id="pu75"><!-- group -->
+     <div class="clip_frame grpelem" id="u75"><!-- image -->
+      <img class="block" id="u75_img" src="./Networking_files/images.jpg" alt="" width="217" height="48">
+     </div>
+     <div class="clip_frame grpelem" id="u88"><!-- image -->
+      <img class="block" id="u88_img" src="./Networking_files/logo.jpg" alt="" width="49" height="48">
+     </div>
+     <div class="clearfix grpelem" id="u94-4"><!-- content -->
+      <p>FabLab Cept</p>
+     </div>
+    </div>
+    <nav class="MenuBar clearfix colelem" id="menuu137"><!-- horizontal box -->
+     <div class="MenuItemContainer clearfix grpelem" id="u145"><!-- vertical box -->
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u148" href="http://archive.fabacademy.org/archives/2017/fablabcept/students/177/index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u150-4"><!-- content --><p>Home</p></div></a>
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u153"><!-- vertical box -->
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u154" href="http://archive.fabacademy.org/archives/2017/fablabcept/students/177/weekly-work.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u156-4"><!-- content --><p>Weekly work</p></div></a>
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u160"><!-- vertical box -->
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u163" href="http://archive.fabacademy.org/archives/2017/fablabcept/students/177/project-files.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u165-4"><!-- content --><p>Project Files</p></div></a>
+     </div>
+     <div class="MenuItemContainer clearfix grpelem" id="u167"><!-- vertical box -->
+      <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u170" href="http://archive.fabacademy.org/archives/2017/fablabcept/students/177/final-project.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u171-4"><!-- content --><p>Final Project</p></div></a>
+     </div>
+    </nav>
+    <div class="clearfix colelem" id="u10489-4"><!-- content -->
+     <p>NETWORKING AND COMMUNICATIONS</p>
+    </div>
+    <div class="clearfix colelem" id="u10490-4"><!-- content -->
+     <p>For networking and communication , I decided to go for Half-duplex serial communication between an Input and Output devices. Input device was Distance sensor and Output device was RGB led.</p>
+    </div>
+    <div class="clearfix colelem" id="u8970-4"><!-- content -->
+     <p>INPUT DEVICE</p>
+    </div>
+    <div class="clearfix colelem" id="u8963-4"><!-- content -->
+     <p>With help from Gautam and Mohit, I designed a Distance sensor board. I had earlier designed a distance sensor board in previous week but could not use it for networking since it did not have Rx/Tx for communication.</p>
+    </div>
+    <div class="clearfix colelem" id="u8964-19"><!-- content -->
+     <p>1. The first step was to design the board in Eagle. I took my old board and added Rx,Tx,VCC and GND pins.</p>
+     <p>Over all the board had following components:</p>
+     <p>1. Attiny 44ssu</p>
+     <p>2. 1x6 pin male header for Distance sensor. However I used only 4 pins</p>
+     <p>3. 2x3 pin male header for AVRISP</p>
+     <p>4. 1x4 pin male header for Rx,Tx,VCC and GND.</p>
+     <p>5. 1 micro F capacitor.</p>
+     <p>&nbsp;</p>
+     <p>Following images show the process I followed. Detailed process of Eagle and milling can be seen in the previous weeks.</p>
+    </div>
+    <div class="SlideShowWidget clearfix colelem wp-slideshow-playing" id="slideshowu8973"><!-- none box -->
+     <div class="popup_anchor" id="u9004popup">
+      <div class="SlideShowContentPanel clearfix" id="u9004" style="width: 0px; height: 0px;"><!-- stack box -->
+       <div class="SSSlide clip_frame clearfix grpelem wp-panel" id="u9104" style="display: none;"><!-- image -->
+        <div id="u9104_clip">
+         <img class="position_content" id="u9104_img" data-src="images/screenshot%202017-06-24%20152820.jpg" src="./Networking_files/screenshot 2017-06-24 152820.jpg" alt="" data-width="936" data-height="526" style="" width="936" height="526">
+        </div>
+       </div>
+       <div class="SSSlide clip_frame clearfix grpelem wp-panel" id="u9113" style="display: none;"><!-- image -->
+        <div id="u9113_clip">
+         <img class="position_content" id="u9113_img" data-src="images/screenshot%202017-06-24%20153510.jpg" src="./Networking_files/screenshot 2017-06-24 153510.jpg" alt="" data-width="936" data-height="526" style="" width="936" height="526">
+        </div>
+       </div>
+       <div class="SSSlide clip_frame clearfix grpelem wp-panel" id="u9122" style="display: none;"><!-- image -->
+        <div id="u9122_clip">
+         <img class="position_content" id="u9122_img" data-src="images/screenshot%202017-06-24%20153522.jpg" src="./Networking_files/screenshot 2017-06-24 153522.jpg" alt="" data-width="936" data-height="526" style="" width="936" height="526">
+        </div>
+       </div>
+       <div class="SSSlide clip_frame clearfix grpelem wp-panel" id="u9131" style="display: none;"><!-- image -->
+        <div id="u9131_clip">
+         <img class="position_content" id="u9131_img" data-src="images/screenshot%202017-06-24%20153642.jpg" src="./Networking_files/screenshot 2017-06-24 153642.jpg" alt="" data-width="936" data-height="526" style="" width="936" height="526">
+        </div>
+       </div>
+       <div class="SSSlide clip_frame clearfix grpelem wp-panel" id="u9140" style="display: none;"><!-- image -->
+        <div id="u9140_clip">
+         <img class="position_content" id="u9140_img" data-src="images/screenshot%202017-06-24%20154257.jpg" src="./Networking_files/screenshot 2017-06-24 154257.jpg" alt="" data-width="936" data-height="526" style="" width="936" height="526">
+        </div>
+       </div>
+       <div class="SSSlide clip_frame clearfix grpelem wp-panel" id="u9005" style="display: none;"><!-- image -->
+        <div id="u9005_clip">
+         <img class="position_content" id="u9005_img" data-src="images/img_20170624_170007.jpg" src="./Networking_files/img_20170624_170007.jpg" alt="" data-width="935" data-height="526" style="" width="935" height="526">
+        </div>
+       </div>
+       <div class="SSSlide clip_frame clearfix grpelem wp-panel" id="u9086" style="opacity: 0.765256;"><!-- image -->
+        <div id="u9086_clip">
+         <img class="position_content" id="u9086_img" data-src="images/img_20170624_170315.jpg" src="./Networking_files/img_20170624_170315.jpg" alt="" data-width="935" data-height="526" style="" width="935" height="526">
+        </div>
+       </div>
+       <img class="SSSlide grpelem wp-panel wp-panel-active" id="u9095" alt="" src="./Networking_files/img_20170624_210315-u9095.png" data-width="810" data-height="526" width="810" height="526" data-src="images/img_20170624_210315-u9095.png" style="opacity: 0.229439;"><!-- rasterized frame -->
+       <div class="SSSlide clip_frame clearfix grpelem wp-panel" id="u9543" style="display: none;"><!-- image -->
+        <div id="u9543_clip">
+         <img class="position_content" id="u9543_img" data-src="images/whatsapp%20image%202017-06-28%20at%20115127%20am.jpg" src="./Networking_files/whatsapp image 2017-06-28 at 115127 am.jpg" alt="" data-width="935" data-height="526" style="" width="935" height="526">
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="popup_anchor" id="u8974popup">
+      <div class="SSSlideLinks clearfix" id="u8974"><!-- horizontal-rows box -->
+       <div class="SSSlideLink clip_frame grpelem" id="u9107"><!-- image -->
+        <img class="block" id="u9107_img" src="./Networking_files/screenshot 2017-06-24 152820-crop-u9107.jpg" alt="" width="118" height="109">
+       </div>
+       <div class="SSSlideLink clip_frame grpelem" id="u9116"><!-- image -->
+        <img class="block" id="u9116_img" src="./Networking_files/screenshot 2017-06-24 153510-crop-u9116.jpg" alt="" width="118" height="109">
+       </div>
+       <div class="SSSlideLink clip_frame grpelem" id="u9125"><!-- image -->
+        <img class="block" id="u9125_img" src="./Networking_files/screenshot 2017-06-24 153522-crop-u9125.jpg" alt="" width="118" height="109">
+       </div>
+       <div class="SSSlideLink clip_frame grpelem" id="u9134"><!-- image -->
+        <img class="block" id="u9134_img" src="./Networking_files/screenshot 2017-06-24 153642-crop-u9134.jpg" alt="" width="118" height="109">
+       </div>
+       <div class="SSSlideLink clip_frame grpelem" id="u9143"><!-- image -->
+        <img class="block" id="u9143_img" src="./Networking_files/screenshot 2017-06-24 154257-crop-u9143.jpg" alt="" width="118" height="109">
+       </div>
+       <div class="SSSlideLink clip_frame grpelem" id="u8987"><!-- image -->
+        <img class="block" id="u8987_img" src="./Networking_files/img_20170624_170007-crop-u8987.jpg" alt="" width="118" height="109">
+       </div>
+       <div class="SSSlideLink clip_frame grpelem" id="u9089"><!-- image -->
+        <img class="block" id="u9089_img" src="./Networking_files/img_20170624_170315-crop-u9089.jpg" alt="" width="118" height="109">
+       </div>
+       <div class="SSSlideLink grpelem wp-tab-active SSSlideLinkSelected" id="u9098"><!-- state-based BG images --></div>
+       <div class="SSSlideLink clip_frame grpelem" id="u9546"><!-- image -->
+        <img class="block" id="u9546_img" src="./Networking_files/whatsapp image 2017-06-28 at 115127 am-crop-u9546.jpg" alt="" width="118" height="109">
+       </div>
+      </div>
+     </div>
+     <div class="popup_anchor" id="u8993popup">
+      <div class="SlideShowCaptionPanel clearfix" id="u8993"><!-- stack box -->
+       <div class="SSSlideCaption clearfix grpelem" id="u9110-4" style="display: none;"><!-- content -->
+        <p>First step was to put Rx,Tx,VCC and GND in the board developed for Input device</p>
+       </div>
+       <div class="SSSlideCaption clearfix grpelem" id="u9119-4" style="display: none;"><!-- content -->
+        <p>Arranging the position of this 4pin header on the board.</p>
+       </div>
+       <div class="SSSlideCaption clearfix grpelem" id="u9128-4" style="display: none;"><!-- content -->
+        <p>GND connection was still not made. Hence I decided to add a&nbsp; zero ohm resistor over the paths.</p>
+       </div>
+       <div class="SSSlideCaption clearfix grpelem" id="u9137-4" style="display: none;"><!-- content -->
+        <p>Here, zero ohm resistor is added in the schematic.</p>
+       </div>
+       <div class="SSSlideCaption clearfix grpelem" id="u9146-4" style="display: none;"><!-- content -->
+        <p>Board showing the final connections. Here zero ohm is added to conect the GND to 4-pin header.</p>
+       </div>
+       <div class="SSSlideCaption clearfix grpelem" id="u8994-4" style="display: none;"><!-- content -->
+        <p>Milling the board using 1/64th bit</p>
+       </div>
+       <div class="SSSlideCaption clearfix grpelem" id="u9092-3" style="display: none;"><!-- content -->
+        <p>&nbsp;</p>
+       </div>
+       <div class="SSSlideCaption clearfix grpelem" id="u9101-4" style="display: block;"><!-- content -->
+        <p>Once milling was done, the components required for soldering were arranged and the board was soldered.</p>
+       </div>
+       <div class="SSSlideCaption clearfix grpelem" id="u9549-4" style="display: none;"><!-- content -->
+        <p>This is how my soldered board looks like.</p>
+       </div>
+      </div>
+     </div>
+     <div class="popup_anchor" id="u8991-4popup">
+      <div class="SlideShowLabel SSSlideCount clearfix" id="u8991-4"><!-- content -->
+       <p><span id="u8991">8 - 9</span></p>
+      </div>
+     </div>
+     <div class="popup_anchor" id="u9022-4popup">
+      <div class="SSPreviousButton clearfix" id="u9022-4"><!-- content -->
+       <p><span id="u9022">&lt;</span></p>
+      </div>
+     </div>
+     <div class="popup_anchor" id="u8992-4popup">
+      <div class="SSNextButton clearfix" id="u8992-4"><!-- content -->
+       <p>&gt;</p>
+      </div>
+     </div>
+    </div>
+    <div class="colelem" id="u8969"><!-- simple frame --></div>
+    <div class="clearfix colelem" id="u9211-6"><!-- content -->
+     <p>Next I checked if the board was working individually.</p>
+     <p>For this I tried the following codes</p>
+    </div>
+    <div class="SlideShowWidget clearfix colelem wp-slideshow-playing" id="slideshowu9308"><!-- none box -->
+     <div class="popup_anchor" id="u9310popup">
+      <div class="SlideShowContentPanel clearfix" id="u9310" style="width: 0px; height: 0px;"><!-- stack box -->
+       <div class="SSSlide clip_frame grpelem wp-panel" id="u9313" style="display: none;"><!-- image -->
+        <img class="block" id="u9313_img" data-src="images/screenshot%202017-06-25%20205230.jpg" src="./Networking_files/screenshot 2017-06-25 205230.jpg" alt="" data-width="810" data-height="455" style="" width="810" height="455">
+       </div>
+       <div class="SSSlide clip_frame grpelem wp-panel" id="u9447" style="display: block; opacity: 0.770561;"><!-- image -->
+        <img class="block" id="u9447_img" data-src="images/screenshot%202017-06-25%20224230.jpg" src="./Networking_files/screenshot 2017-06-25 224230.jpg" alt="" data-width="810" data-height="455" style="" width="810" height="455">
+       </div>
+       <div class="SSSlide clip_frame grpelem wp-panel wp-panel-active" id="u9420" style="display: block; opacity: 0.229439;"><!-- image -->
+        <img class="block" id="u9420_img" data-src="images/screenshot%202017-06-25%20215344.jpg" src="./Networking_files/screenshot 2017-06-25 215344.jpg" alt="" data-width="810" data-height="455" style="" width="810" height="455">
+       </div>
+       <div class="SSSlide clip_frame grpelem wp-panel" id="u9429" style="display: none;"><!-- image -->
+        <img class="block" id="u9429_img" data-src="images/screenshot%202017-06-25%20222903.jpg" src="./Networking_files/screenshot 2017-06-25 222903.jpg" alt="" data-width="810" data-height="455" style="" width="810" height="455">
+       </div>
+       <div class="SSSlide clip_frame grpelem wp-panel" id="u9456" style="display: none;"><!-- image -->
+        <img class="block" id="u9456_img" data-src="images/screenshot%202017-06-25%20224250.jpg" src="./Networking_files/screenshot 2017-06-25 224250.jpg" alt="" data-width="810" data-height="455" style="" width="810" height="455">
+       </div>
+      </div>
+     </div>
+     <div class="popup_anchor" id="u9336popup">
+      <div class="SSSlideLinks clearfix" id="u9336"><!-- horizontal-rows box -->
+       <div class="SSSlideLink clip_frame grpelem" id="u9347"><!-- image -->
+        <img class="block" id="u9347_img" src="./Networking_files/screenshot 2017-06-25 205230-crop-u9347.jpg" alt="" width="118" height="109">
+       </div>
+       <div class="SSSlideLink clip_frame grpelem" id="u9450"><!-- image -->
+        <img class="block" id="u9450_img" src="./Networking_files/screenshot 2017-06-25 224230-crop-u9450.jpg" alt="" width="118" height="109">
+       </div>
+       <div class="SSSlideLink clip_frame grpelem wp-tab-active SSSlideLinkSelected" id="u9423"><!-- image -->
+        <img class="block" id="u9423_img" src="./Networking_files/screenshot 2017-06-25 215344-crop-u9423.jpg" alt="" width="118" height="109">
+       </div>
+       <div class="SSSlideLink clip_frame grpelem" id="u9432"><!-- image -->
+        <img class="block" id="u9432_img" src="./Networking_files/screenshot 2017-06-25 222903-crop-u9432.jpg" alt="" width="118" height="109">
+       </div>
+       <div class="SSSlideLink clip_frame grpelem" id="u9459"><!-- image -->
+        <img class="block" id="u9459_img" src="./Networking_files/screenshot 2017-06-25 224250-crop-u9459.jpg" alt="" width="118" height="109">
+       </div>
+      </div>
+     </div>
+     <div class="popup_anchor" id="u9327popup">
+      <div class="SlideShowCaptionPanel clearfix" id="u9327"><!-- stack box -->
+       <div class="SSSlideCaption clearfix grpelem" id="u9332-4" style="display: none;"><!-- content -->
+        <p>First step was to run Arduino as ISP and then burn bootloader for Atitiny 44SSu</p>
+       </div>
+       <div class="SSSlideCaption clearfix grpelem" id="u9453-4" style="display: none;"><!-- content -->
+        <p>First step was to put Rx,Tx,VCC and GND in the board developed for Input device6</p>
+       </div>
+       <div class="SSSlideCaption clearfix grpelem" id="u9426-4" style="display: block;"><!-- content -->
+        <p>Defined Rx, Tx, Trig and Echo, where Trig is output and Echo is input. Mohit helped me with the coding of this board.</p>
+       </div>
+       <div class="SSSlideCaption clearfix grpelem" id="u9435-4" style="display: none;"><!-- content -->
+        <p>With the first code, I could get distance values in cm on the serial monitor.</p>
+       </div>
+       <div class="SSSlideCaption clearfix grpelem" id="u9462-4" style="display: none;"><!-- content -->
+        <p>For 3 different LEDs to blink, I needed 3 different values. So I gave "0-1-2" values to different range of distances.</p>
+       </div>
+      </div>
+     </div>
+     <div class="popup_anchor" id="u9357-4popup">
+      <div class="SlideShowLabel SSSlideCount clearfix" id="u9357-4"><!-- content -->
+       <p><span id="u9357">3 - 5</span></p>
+      </div>
+     </div>
+     <div class="popup_anchor" id="u9309-4popup">
+      <div class="SSPreviousButton clearfix" id="u9309-4"><!-- content -->
+       <p><span id="u9309">&lt;</span></p>
+      </div>
+     </div>
+     <div class="popup_anchor" id="u9354-4popup">
+      <div class="SSNextButton clearfix" id="u9354-4"><!-- content -->
+       <p>&gt;</p>
+      </div>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="u9492-4"><!-- content -->
+     <p>Video showing distance in centimeters.</p>
+    </div>
+    <div class="colelem" id="u9493"><!-- custom html -->
+     <iframe src="./Networking_files/223372796.html" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<p><a href="https://vimeo.com/223372796">Networkings_input_01</a> from <a href="https://vimeo.com/user37016917">ARPI</a> on <a href="https://vimeo.com/">Vimeo</a>.</p>
+</div>
+    <div class="clearfix colelem" id="u9497-4"><!-- content -->
+     <p>Video showing distance remaped to "0-1-2" as output.</p>
+    </div>
+    <div class="colelem" id="u9495"><!-- custom html -->
+     <iframe src="./Networking_files/223373283.html" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<p><a href="https://vimeo.com/223373283">Networking_input 02</a> from <a href="https://vimeo.com/user37016917">ARPI</a> on <a href="https://vimeo.com/">Vimeo</a>.</p>
+</div>
+    <div class="clearfix colelem" id="u9209-4"><!-- content -->
+     <p>OUTPUT DEVICE</p>
+    </div>
+    <div class="clearfix colelem" id="u9210-6"><!-- content -->
+     <p>For output device, I used the board I made in previous week's assignment, which can be found <a class="nonblock" href="http://archive.fabacademy.org/archives/2017/fablabcept/students/177/week-10.html">here.</a></p>
+    </div>
+    <div class="clip_frame colelem" id="u9470"><!-- image -->
+     <img class="block" id="u9470_img" src="./Networking_files/screenshot 2017-06-26 141410.jpg" alt="" width="810" height="455">
+    </div>
+    <div class="clearfix colelem" id="u9476-10"><!-- content -->
+     <p>The code for LED was written to blink in different colours responding to input in the form of "0-1-2".</p>
+     <p>However, when the code was run later using networking, it did not work. Then I realised that since we are already providing VCC in common pin, we need to give digitalWrite as "low" for the colour that we want to blink.</p>
+     <p>Hence, the code was corrected as below. The code can be found <a class="nonblock" href="http://archive.fabacademy.org/archives/2017/fablabcept/students/177/week-15-pf.html">here</a></p>
+    </div>
+    <div class="clip_frame colelem" id="u9477"><!-- image -->
+     <img class="block" id="u9477_img" src="./Networking_files/screenshot 2017-06-28 035508.jpg" alt="" width="810" height="455">
+    </div>
+    <div class="clearfix colelem" id="u9469-4"><!-- content -->
+     <p>Next I used an FTDI cable and connected its Rx,Tx,VCC and GND to the input device board and the networking was established</p>
+    </div>
+    <div class="colelem" id="u9483"><!-- custom html -->
+     <iframe src="./Networking_files/223372490.html" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<p><a href="https://vimeo.com/223372490">networking_final</a> from <a href="https://vimeo.com/user37016917">ARPI</a> on <a href="https://vimeo.com/">Vimeo</a>.</p>
+</div>
+    <div class="clearfix colelem" id="u11637-8"><!-- content -->
+     <p>Next, to add more boards, I decided to add more values from my input device.</p>
+     <p>I used my "hello echo" board which I made in previous week. Details can be found <a class="nonblock" href="http://archive.fabacademy.org/archives/2017/fablabcept/students/177/week-6.html">here.</a></p>
+    </div>
+    <div class="clearfix colelem" id="u11683-6"><!-- content -->
+     <p>The idea was to allow more boards to be connected. For this, one option is to call each board by giving different addresses from the computer, and the next option, which I chose, was to allow the input device to call for different boards and also define the colours of RGB led in the first board.</p>
+     <p>Following diagram shows the connections required between the boards, and Input-Output values</p>
+    </div>
+    <div class="clearfix colelem" id="u11687"><!-- column -->
+     <div class="clearfix colelem" id="pu11684-4"><!-- group -->
+      <div class="clearfix grpelem" id="u11684-4"><!-- content -->
+       <p>Master</p>
+      </div>
+      <div class="clearfix grpelem" id="u11685-4"><!-- content -->
+       <p>Slave</p>
+      </div>
+      <div class="clearfix grpelem" id="u11686-4"><!-- content -->
+       <p>Slave</p>
+      </div>
+     </div>
+     <div class="clearfix colelem" id="u11682"><!-- column -->
+      <div class="clearfix colelem" id="pu11638"><!-- group -->
+       <div class="clearfix grpelem" id="u11638"><!-- column -->
+        <div class="clearfix colelem" id="u11644-4"><!-- content -->
+         <p>Rx</p>
+        </div>
+        <div class="clearfix colelem" id="u11649-4"><!-- content -->
+         <p>Tx</p>
+        </div>
+       </div>
+       <div class="clearfix grpelem" id="pu11655-4"><!-- group -->
+        <div class="clearfix grpelem" id="u11655-4"><!-- content -->
+         <p>Tx</p>
+        </div>
+        <div class="clearfix grpelem" id="u11656-4"><!-- content -->
+         <p>Rx</p>
+        </div>
+        <div class="clearfix grpelem" id="u11643"><!-- column -->
+         <div class="position_content" id="u11643_position_content">
+          <div class="colelem" id="u11661"><!-- simple frame --></div>
+          <div class="colelem" id="u11662"><!-- simple frame --></div>
+         </div>
+        </div>
+       </div>
+       <div class="clearfix grpelem" id="u11650-4"><!-- content -->
+        <p>Tx</p>
+       </div>
+       <div class="clearfix grpelem" id="u11651-4"><!-- content -->
+        <p>Rx</p>
+       </div>
+       <div class="clearfix grpelem" id="u11640"><!-- column -->
+        <div class="position_content" id="u11640_position_content">
+         <div class="colelem" id="u11660"><!-- simple frame --></div>
+         <div class="colelem" id="u11663"><!-- simple frame --></div>
+        </div>
+       </div>
+      </div>
+      <div class="clearfix colelem" id="pu11639-4"><!-- group -->
+       <div class="clearfix grpelem" id="u11639-4"><!-- content -->
+        <p>Distance sensor</p>
+       </div>
+       <div class="clearfix grpelem" id="u11641-4"><!-- content -->
+        <p>RGB LED</p>
+       </div>
+       <div class="clearfix grpelem" id="u11642-4"><!-- content -->
+        <p>Hello echo "LED"</p>
+       </div>
+      </div>
+      <div class="clearfix colelem" id="pu11664-4"><!-- group -->
+       <div class="clearfix grpelem" id="u11664-4"><!-- content -->
+        <p>Value = 0</p>
+       </div>
+       <div class="grpelem" id="u11678"><!-- simple frame --></div>
+       <div class="clearfix grpelem" id="u11666-4"><!-- content -->
+        <p>Output = Red</p>
+       </div>
+      </div>
+      <div class="clearfix colelem" id="pu11670-4"><!-- group -->
+       <div class="clearfix grpelem" id="u11670-4"><!-- content -->
+        <p>Value = 1</p>
+       </div>
+       <div class="grpelem" id="u11679"><!-- simple frame --></div>
+       <div class="clearfix grpelem" id="u11669-4"><!-- content -->
+        <p>Output = Green</p>
+       </div>
+      </div>
+      <div class="clearfix colelem" id="pu11673-4"><!-- group -->
+       <div class="clearfix grpelem" id="u11673-4"><!-- content -->
+        <p>Value = 2</p>
+       </div>
+       <div class="grpelem" id="u11680"><!-- simple frame --></div>
+       <div class="clearfix grpelem" id="u11672-4"><!-- content -->
+        <p>Output = Blue</p>
+       </div>
+      </div>
+      <div class="clearfix colelem" id="pu11676-4"><!-- group -->
+       <div class="clearfix grpelem" id="u11676-4"><!-- content -->
+        <p>Value = 3</p>
+       </div>
+       <div class="grpelem" id="u11681"><!-- simple frame --></div>
+       <div class="clearfix grpelem" id="u11674-4"><!-- content -->
+        <p>Output = Led</p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="u11635-4"><!-- content -->
+     <p>My distance sensor code currently gave me values as 0-1-2. Here, value "0" would light up Red colour on the RGB board, "1" would light up Green and "2" would light up blue. So, again I changed the distance sensor code and increased its range to give an additional value "3". This value will give signal to light up the Led on "hello echo" board. Similarly the code can be modified to give additional values and signals can be given to additional boards as and when required.</p>
+    </div>
+    <div class="clearfix colelem" id="u11703-4"><!-- content -->
+     <p>Here is how the code looked like</p>
+    </div>
+    <div class="clearfix colelem" id="pu11704"><!-- group -->
+     <div class="clip_frame grpelem" id="u11704"><!-- image -->
+      <img class="block" id="u11704_img" src="./Networking_files/screenshot 2017-07-10 072950.jpg" alt="" width="810" height="455">
+     </div>
+     <div class="grpelem" id="u11710"><!-- simple frame --></div>
+    </div>
+    <div class="clearfix colelem" id="u11730-4"><!-- content -->
+     <p>I uploaded the code successfully to obtain 0-1-2-3 as values for different range of distances. I checked it on serial monitor first, before attaching the boards to the other board.</p>
+    </div>
+    <div class="colelem" id="u11729"><!-- custom html -->
+     <iframe src="./Networking_files/224877829.html" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<p><a href="https://vimeo.com/224877829">distance_including 0-1-2-3</a> from <a href="https://vimeo.com/user66634103">Arpi</a> on <a href="https://vimeo.com/">Vimeo</a>.</p>
+</div>
+    <div class="clearfix colelem" id="u11711-6"><!-- content -->
+     <p>Next step was to write a code for "hell echo" led to light-up when it gets signal "3".</p>
+     <p>Here is how it looked like.</p>
+    </div>
+    <div class="clearfix colelem" id="pu11715"><!-- group -->
+     <div class="clip_frame grpelem" id="u11715"><!-- image -->
+      <img class="block" id="u11715_img" src="./Networking_files/scrnsht2.jpg" alt="" width="810" height="455">
+     </div>
+     <div class="grpelem" id="u11721"><!-- simple frame --></div>
+    </div>
+    <div class="clearfix colelem" id="u11732-4"><!-- content -->
+     <p>Next step was to write a code for "hello echo" led to light-up when it gets signal "3". Here is how it looked like.&nbsp; The idea was to see the LED light up once you give the value "3" from the computer. Later on when all the boards are connected, this value will come from my input device.</p>
+    </div>
+    <div class="colelem" id="u11750"><!-- custom html -->
+     <iframe src="./Networking_files/224881159.html" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<p><a href="https://vimeo.com/224881159">VID_20170709_155002</a> from <a href="https://vimeo.com/user66634103">Arpi</a> on <a href="https://vimeo.com/">Vimeo</a>.</p>
+</div>
+    <div class="clearfix colelem" id="u11722-4"><!-- content -->
+     <p>Here is how my code for "RGB Led" looked like. In terms of logic, there was not any changes, I only changed the variable name.</p>
+    </div>
+    <div class="clip_frame colelem" id="u11723"><!-- image -->
+     <img class="block" id="u11723_img" src="./Networking_files/scrnsht.jpg" alt="" width="810" height="455">
+    </div>
+    <div class="clearfix colelem" id="u11735-4"><!-- content -->
+     <p>I checked if my code was working individually. It would give me red, green, blue outputs for 0,1,2 respectively. However, while making the video, I by mistake pressed 2 numbers together, 0 and 1, and surprisingly it gave my violet colour. Check out the video below.</p>
+    </div>
+    <div class="colelem" id="u11733"><!-- custom html -->
+     <iframe src="./Networking_files/224880964.html" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<p><a href="https://vimeo.com/224880964">VID_20170709_143827</a> from <a href="https://vimeo.com/user66634103">Arpi</a> on <a href="https://vimeo.com/">Vimeo</a>.</p>
+</div>
+    <div class="clearfix colelem" id="u11759-4"><!-- content -->
+     <p>Finally, since all individual codes were uploaded, I connected all 3 boards and FTDI, to check if my connections were working</p>
+    </div>
+    <div class="colelem" id="u11754"><!-- custom html -->
+     <iframe src="./Networking_files/224881894.html" width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<p><a href="https://vimeo.com/224881894">VID_20170709_160928</a> from <a href="https://vimeo.com/user66634103">Arpi</a> on <a href="https://vimeo.com/">Vimeo</a>.</p>
+</div>
+    <div class="clearfix colelem" id="u11752-6"><!-- content -->
+     <p>All files can be found <a class="nonblock" href="http://archive.fabacademy.org/archives/2017/fablabcept/students/177/week-15-pf.html">here.</a></p>
+    </div>
+    <div class="verticalspacer" style="min-height: 1px;"></div>
+   </div>
+  </div>
+  <div class="preload_images">
+   <img class="preload" src="./Networking_files/u9098-a.png" alt="">
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script><script src="./Networking_files/jquery-1.8.3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script src="./Networking_files/museutils.js" type="text/javascript"></script>
+  <script src="./Networking_files/jquery.musemenu.js" type="text/javascript"></script>
+  <script src="./Networking_files/webpro.js" type="text/javascript"></script>
+  <script src="./Networking_files/musewpslideshow.js" type="text/javascript"></script>
+  <script src="./Networking_files/jquery.museoverlay.js" type="text/javascript"></script>
+  <script src="./Networking_files/touchswipe.js" type="text/javascript"></script>
+  <script src="./Networking_files/jquery.watch.js" type="text/javascript"></script>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   $(document).ready(function() { try {
+(function(){var a={},b=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),16);return 0};(function(){$('link[type="text/css"]').each(function(){var b=($(this).attr("href")||"").match(/\/?css\/([\w\-]+\.css)\?(\d+)/);b&&b[1]&&b[2]&&(a[b[1]]=b[2])})})();(function(){$("body").append('<div class="version" style="display:none; width:1px; height:1px;"></div>');
+for(var c=$(".version"),d=0;d<Muse.assets.required.length;){var f=Muse.assets.required[d],g=f.match(/([\w\-\.]+)\.(\w+)$/),k=g&&g[1]?g[1]:null,g=g&&g[2]?g[2]:null;switch(g.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");c.addClass(k);var g=b(c.css("color")),h=b(c.css("background-color"));g!=0||h!=0?(Muse.assets.required.splice(d,1),"undefined"!=typeof a[f]&&(g!=a[f]>>>24||h!=(a[f]&16777215))&&Muse.assets.outOfDate.push(f)):d++;c.removeClass(k);break;case "js":k.match(/^jquery-[\d\.]+/gi)&&
+typeof $!="undefined"?Muse.assets.required.splice(d,1):d++;break;default:throw Error("Unsupported file type: "+g);}}c.remove();if(Muse.assets.outOfDate.length||Muse.assets.required.length)c="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",(d=location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi))&&Muse.assets.outOfDate.length&&(c+="\nOut of date: "+Muse.assets.outOfDate.join(",")),d&&Muse.assets.required.length&&(c+="\nMissing: "+Muse.assets.required.join(",")),alert(c)})()})();
+/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.initWidget('.MenuBar', function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
+Muse.Utils.initWidget('#slideshowu8973', function(elem) { $(elem).data('widget', new WebPro.Widget.ContentSlideShow(elem, {autoPlay:true,displayInterval:3500,slideLinkStopsSlideShow:false,transitionStyle:'fading',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:500,enableSwipe:true,elastic:'off',resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false})); });/* #slideshowu8973 */
+Muse.Utils.initWidget('#slideshowu9308', function(elem) { $(elem).data('widget', new WebPro.Widget.ContentSlideShow(elem, {autoPlay:true,displayInterval:3500,slideLinkStopsSlideShow:false,transitionStyle:'fading',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:500,enableSwipe:true,elastic:'off',resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false})); });/* #slideshowu9308 */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+} catch(e) { if (e && 'function' == typeof e.notify) e.notify(); else Muse.Assert.fail('Error calling selector function:' + e); }});
+</script>
+   
+
+<iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;" src="./Networking_files/saved_resource.html"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" style="display: none;" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}"></div></body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
