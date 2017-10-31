@@ -286,7 +286,7 @@
          <div class="panel-group">
             <div class="panel panel-default">
                <div class="panel-heading">
-                  <h4 class="dark-title">Files</h2>
+                  <h4 class="dark-title">Files</h4>
                </div>
                <div class="panel-body">
                   <p>
@@ -302,6 +302,43 @@
                </div>
             </div>
          </div>
+         <div class="panel-group">
+            <div class="panel panel-default">
+               <div class="panel-heading">
+                  <h4 class="dark-title">Code 1 : LCD &amp; Ultrasonic </h4>
+               </div>
+               <div class="panel-body">
+               <p>This is the first code I've tested to show basic usage of LCD &amp; ultrasonic. The code will measure distance with the help of ultrasonic sensor and it will display the distance on the mounted i2c LCD.
+               </p>
+                  <script src="https://gist.github.com/dhruvsaidava/8eb4f4c30bf32f146db16fff03cd22ec.js"></script>
+               </div>
+            </div>
+         </div>
+
+         <div class="panel-group">
+            <div class="panel panel-default">
+               <div class="panel-heading">
+                  <h4 class="dark-title">Code 2 : Ultrasonic &amp; Servo motors</h4>
+               </div>
+               <div class="panel-body">
+                  <h5>Following code is designed to move Chotu bot without facing any accident with obstetrical. All of sudden anything comes in front of the bot, or any structure (like a wall) comes near by, it will try to avoid crash by turning away, thus it will change the linear path of it in a different direction.</h5>
+                  <script src="https://gist.github.com/dhruvsaidava/1d779cc95cdaa5b6a97899b1afa20bb7.js"></script>
+               </div>
+            </div>
+         </div>
+
+         <div class="panel-group">
+            <div class="panel panel-default">
+               <div class="panel-heading">
+                  <h4 class="dark-title">Code 3 : Movement controlling via Bluetooth</h4>
+               </div>
+               <div class="panel-body">
+                  <h5>I've implemented this code to control Servo motors of the Chotu bot, taking input from Bluetooth HC05. I've used this <a target="_blank" href="">Android Application</a> which to send control inputs to the bot. The main problem faced here was the to change instructions of servo moment as fast as possible. Since servo instructions are kind of non-preemption, it won't take immediate action until last instruction completes its execution. This inconsistency also breaks bluetooth communication channel of bot - mobile and it continues to repeat last instruction after taking one or two rapid inputs from the mobile.</h5>
+                  
+               </div>
+            </div>
+         </div>
+
          <hr>
          <br><br><br>
          <!-- Panel next -->
