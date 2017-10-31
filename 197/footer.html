@@ -28,4 +28,14 @@
          return false;
       }
    })
+   $('img').each(function(){
+         var w = $(this).attr('width');
+         $(this).css('cursor','pointer');
+         if( w == "100%" || w == "48%" ||  w == "45%" || w == "49%" || w == "70%"){    
+            $(this).click(function(){
+                  window.open($(this).attr('src'));
+            });
+         }
+   })
+   </script>
 </script>
