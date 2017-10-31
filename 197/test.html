@@ -1,0 +1,91 @@
+<h3>Networking & Communications</h3>
+
+<p>For networking and communication , I decided to go for Half-duplex serial communication between an Input and Output devices. Input device was Distance sensor and Output device was RGB led. </p>
+
+<h4>INPUT DEVICE</h4>
+<p>
+	
+With help from Gautam and Mohit, I designed a Distance sensor board. I had earlier designed a distance sensor board in previous week but could not use it for networking since it did not have Rx/Tx for communication.
+
+</p>
+<p>
+	
+<p>
+The first step was to design the board in Eagle. I took my old board and added Rx,Tx,VCC and GND pins. Over all the board had following components:
+</p>
+	<ul>
+		
+		<li>Attiny 44ssu</li>
+		<li>1x6 pin male header for Distance sensor. However I used only 4 pins</li>
+		<li>2x3 pin male header for AVRISP</li>
+		<li>1x4 pin male header for Rx,Tx,VCC and GND.</li>
+		<li>1 micro F capacitor.</li>
+	</ul>
+</p>
+ 
+Following images show the process I followed. Detailed process of Eagle and milling can be seen in the previous weeks.
+
+
+         <img width="48%" src="images/w15x/screenshot%202017-06-24%20152820.jpg" width="936">
+         <img width="48%" src="images/w15x/screenshot%202017-06-24%20153510.jpg" width="936">
+         <img width="48%" src="images/w15x/screenshot%202017-06-24%20153522.jpg" width="936">
+         <img width="48%" src="images/w15x/screenshot%202017-06-24%20153642.jpg" width="936">
+         <img width="48%" src="images/w15x/screenshot%202017-06-24%20154257.jpg" width="936">
+         <img width="48%" src="images/w15x/img_20170624_170007.jpg" width="48%">
+         <img width="48%" src="images/w15x/img_20170624_170315.jpg" width="48%">
+       <img width="48%" src="images/w15x/img_20170624_210315-u9095.png" width="48%" >
+       <img width="48%" src="images/w15x/whatsapp%20image%202017-06-28%20at%20115127%20am.jpg" width="48%">
+
+<br>
+<p> Next I checked if the board was working individually. For this I tried the following codes </p>
+        <img src="images/screenshot%202017-06-25%20205230.jpg" width="48%">
+        <img src="images/screenshot%202017-06-25%20224230.jpg" width="48%">
+        <img src="images/screenshot%202017-06-25%20215344.jpg" width="48%">
+        <img src="images/screenshot%202017-06-25%20222903.jpg" width="48%">
+        <img src="images/screenshot%202017-06-25%20224250.jpg" width="48%">
+First step was to put Rx,Tx,VCC and GND in the board developed for Input device.
+
+
+<h4>OUTPUT DEVICE</h4>
+
+<p>For output device, I used the board I made in previous week's assignment, which can be found here.</p>
+<p>
+	
+The code for LED was written to blink in different colours responding to input in the form of "0-1-2".
+However, when the code was run later using networking, it did not work. Then I realised that since we are already providing VCC in common pin, we need to give digitalWrite as "low" for the colour that we want to blink.
+</p>
+<p>Hence, the code was corrected as below.<p>
+	<br>
+<img src="images/screenshot%202017-06-28%20035508.jpg" width="100%">
+<p>
+	Next I used an FTDI cable and connected its Rx,Tx,VCC and GND to the input device board and the networking was established.	
+</p>
+
+Next, to add more boards, I decided to add more values from my input device.
+The idea was to allow more boards to be connected. For this, one option is to call each board by giving different addresses from the computer, and the next option, which I chose, was to allow the input device to call for different boards and also define the colours of RGB led in the first board.
+
+<img src="images/design.png" width="100%">
+<p>
+	
+My distance sensor code currently gave me values as 0-1-2. Here, value "0" would light up Red colour on the RGB board, "1" would light up Green and "2" would light up blue. So, again I changed the distance sensor code and increased its range to give an additional value "3". This value will give signal to light up the Led on "hello echo" board. Similarly the code can be modified to give additional values and signals can be given to additional boards as and when required.
+</p>
+<p>Here is how the code looked like</p>
+<br>
+
+<img src="images/screenshot%202017-07-10%20072950.jpg" width="100%">
+<p>
+I uploaded the code successfully to obtain 0-1-2-3 as values for different range of distances. I checked it on serial monitor first, before attaching the boards to the other board.
+</p>
+
+<p>Next step was to write a code for "hell echo" led to light-up when it gets signal "3".
+Here is how it looked like.</p>
+<img src="images/scrnsht2.jpg" width="100%">
+
+<p>
+Next step was to write a code for "hello echo" led to light-up when it gets signal "3". Here is how it looked like.  The idea was to see the LED light up once you give the value "3" from the computer. Later on when all the boards are connected, this value will come from my input device.
+</p>
+<p>
+	
+I checked if my code was working individually. It would give me red, green, blue outputs for 0,1,2 respectively. 
+Finally, since all individual codes were uploaded, I connected all 3 boards and FTDI, to check if my connections were working.
+</p>
