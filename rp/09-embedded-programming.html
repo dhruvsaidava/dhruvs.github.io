@@ -7,7 +7,7 @@
 -->
 <html>
    <head>
-       <title>Computer Aided Design | Rutuja Patel | Fab Academy 2018</title>
+       <title>Week 9 | Embedded Programming | Mar 14</title>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
       <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -43,22 +43,25 @@
                   </header>
                   <!-- Content -->
                   <h2 id="content"><a href="http://academy.cba.mit.edu/classes/principles_practices/index.html">Fab Academy 2018 | Archive</a></h2>
-                  <p>
-                     <a href=http://ng.cba.mit.edu/show/script/18.01.fab.show.html><b>digital fabrication</b></a> ('h' for help, 'i' for index, videos linked) <br>
-                     <b>schedule</b> <br>
-                     <b><a href=http://fab.cba.mit.edu/about/charter>rights and responsibilities</a></b> <br>
-                     <b>assignment</b>
-                     plan and sketch a potential <a href=https://cse.google.com/cse/publicurl?cx=005180655622273248137:bjgkhj-m09c>final project</a>  <br>
-                  </p>
-                  <hr>
+                  
+                  <h2>Overview</h2>
+                  <div class="box">
+                  <p>This week I programmed the board which I made in my electronics design week . I have practised programming with arduino board but programming Attiny board was new and interesting. For programming the board with our computer we need to make our board talk with the computer i.e transfer the data from computer to board and vice versa. First of all we need to understand the ATtiny 45 IC pinout and 
+                     <a href="http://www.farnell.com/datasheets/1698186.pdf" target="_blank">Datasheet</a> properly.</p>
+                    
 
-                 <br>
-                 <h3>Sketch of Final Project</h3>
-                      <div class="box">
+                    <p> For programming any board we need to include these pins in our board.
+Some notes to understand the ISP
+<ol>  
+<li>MOSI : Master out Slave in - This pin is used to transfer data from computer to the microprocessor</li>
+<li>MISO : Master in Slave out - This pin is used to read data from the microprocessor</li>
+<li>RST : reset pin - This pin is used to reset the microprocessor</li>
+<li>SCK : clock - Clock signal is supplied with help of this pin</li>
+<li>VCC : Voltage supply</li>
+<li>GND : Ground</li>
+</ol>
 
-                        <p>
-                          Flute is musical instrument which work on blow of air with 6 hole to be controlled by finger tips for melodius music.
-                        </p>
+                    </p>
                         
                       </div>
                          </section>
