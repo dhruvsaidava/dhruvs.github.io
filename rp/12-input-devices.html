@@ -46,7 +46,7 @@
                   
                   <hr>
 
-                 <br>
+                 <br><!--
                  <h3>Sketch of Final Project</h3>
                         <div class="box">
 
@@ -101,6 +101,228 @@
 
                            </p>
                            
+                        </div><-->
+
+
+                        <h2>Ultrasonic as Intput by Trig & Echo Data it changes RGB LED according to prefered distance in code</h2>
+
+                        <div class="box">
+                        
+
+This week was for making an input device which I was going to use in my final project. I was going to use Ultrasonic sensor as an input device. This week I wanted to use the ATtiny 44 board so I designed a board with ultrasonic sensor and added RGB led into the board.
+
+
+I used Eagle to design  the PCB using the ATTiny 44.
+
+
+The components I used:
+
+<ol>
+   <li>ATTiny 44</li>
+   <li>RGB Led</li>
+   <li>Ultrasonic Headers</li>
+   <li>FTDI</li>
+   <li>Capacitor</li>
+   <li>4 Resistors</li>
+</ol>
+
+First step is to make a schematic in the Eagle
+
+
+
+<br><span class="image main"><img src="images/week12/ComponentsOfInput.jpg"></span><br>
+
+
+
+
+
+
+Connecting the components at the required pin number.
+
+
+
+<br><span class="image main"><img src="images/week12/ComponentSchematic.jpg"></span><br>
+
+
+
+
+
+
+
+
+Eagle board view
+
+
+
+
+<br><span class="image main"><img src="images/week12/ComponentsToSet.jpg"></span><br>
+
+
+
+
+
+<br><span class="image main"><img src="images/week12/ComponentsToSet2.jpg"></span><br>
+
+
+
+
+
+
+
+
+
+
+<br><span class="image main"><img src="images/week12/BoardToMill.jpg"></span><br>
+
+
+
+
+
+
+
+I used Auto-rout command to generate the traces and made some changes in the path for making it look more better.
+
+
+
+<br><span class="image main"><img src="images/week12/ImproperMilling.jpg"></span><br>
+
+
+This happens when the board does not stick properly to the machine’s bed, the board starts moving and all the traces gets merged
+
+
+
+
+
+
+As the board got wasted, I milled another board with sticking a good quality tape and it milled properly. Now the board was ready to be soldered.
+
+ 
+
+<br><span class="image main"><img src="images/week12/ProperlyMilledBoard.jpg"></span><br>
+
+
+
+
+<br><span class="image main"><img src="images/week12/SolderedBoard.jpg"></span><br>
+
+
+
+
+
+I tested the board with multimeter, all the connections were perfect and no part was merging.
+
+
+
+<br><span class="image main"><img src="images/week12/RGBBlue.jpg"></span><br>
+
+
+
+
+
+Now the board is ready to be coded. I referred the code from here and made changes according to the design.
+
+
+
+
+
+First I tested the code with rgb. The code worked properly and the rgb was bright and beautiful.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<pre><code>#include <SoftwareSerial.h>
+
+#define RX 5
+#define TX 6
+
+SoftwareSerial mySerial(5,6); // rx, tx
+
+#define echoPin 2
+#define trigPin 3
+#define LEDPin 13
+
+int maximumRange = 200;
+int minimumRange = 0;
+long duration, distance;
+int redPin = 8;
+int greenPin = 9;
+int bluePin = 10;
+
+void setup()
+{
+    mySerial.begin (9600);
+    pinMode(trigPin, OUTPUT);
+    pinMode(echoPin, INPUT);
+    pinMode(LEDPin, OUTPUT);
+    pinMode(redPin, OUTPUT);
+    pinMode(greenPin, OUTPUT);
+ }
+
+
+void loop()
+{
+    digitalWrite(trigPin, LOW);
+    delayMicroseconds(2);
+    digitalWrite(trigPin, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(trigPin, LOW);
+    duration = pulseIn(echoPin, HIGH);
+    distance = duration/58.2;
+  if(distance>=60)
+{  
+    setColor(255, 0, 0);  // red
+    delay(100);
+}
+  if (distance<60 && distance>=50)
+{
+    setColor(0, 255, 0);  // green
+    delay(100);
+}
+  if (distance<50 && distance>=40)
+{
+    setColor(0, 0, 255);  // blue
+    delay(100);
+}
+ else
+{
+    digitalWrite(LEDPin, LOW);
+}
+   mySerial.println(distance);
+   delay(100);
+}
+void setColor(int red, int green, int blue)
+{
+   analogWrite(redPin, red);
+   analogWrite(greenPin, green);
+   analogWrite(bluePin, blue);
+
+}</code></pre>
+
+
+
+
+
+
+Video in the file
+
+UltrasonicRGB.mp4
+
+
+
                         </div>
                          </section>
             <!-- Fab Week Content  -->

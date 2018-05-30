@@ -191,6 +191,65 @@
 
                            </p>
                   <hr>
+                  <h2>Parametric Design</h2>
+                  <div class="box">
+                     I shifted to Rhino for making the parametric construction. Link of tutorial I refered. I referred the basic of Grasshopper from here . First of all we need to make a notch for the structure we are going to make. We can make any structure we want.  <br>
+                     <span class="image main"><img src="images/week4/parametric (1).png" > <br></span>
+
+
+                     Now we need to take the notch into the grasshopper. For this go to the grasshopper screen and select curve, you can double click in the plane and write crv. Now Right click << set one curve and then click on the notch at the left - this commands will help in setting the curve of Rhino file into Grasshopper. By right clicking on the curve, you will also be able to change the name as here I have given as “Notch Geometry”. <br>
+                     <span class="image main"><img src="images/week4/parametric (2).png" > <br></span>
+                     <span class="image main"><img src="images/week4/parametric (3).png" > <br></span>
+                     <span class="image main"><img src="images/week4/parametric (4).png" > <br></span>
+
+                      Now for making the notch able to fix in the geometry we want, we need to follow some steps. Double Click and make a Bounding Box - this component is for making a point like outline around the notch geometry. Basically it represents graphical uv points <br>
+                      <span class="image main"><img src="images/week4/parametric (5).png" > <br></span>
+
+
+                       Now another component Deconstruct Brep(Boundary representation). As the name suggests, it will represent the boundary of the notch. <br>
+                       <span class="image main"><img src="images/week4/parametric (6).png""><br></span>
+
+
+                       Now evaluate the component i.e to mark the point on the notch from where we want to connect the notch any geometry. For this select Evaluate Surface component give the point where you want it to join. You can select the point with Panel component. <br>
+                       <span class="image main"><img src="images/week4/parametric (7).png" > <br></span>
+                       <span class="image main"><img src="images/week4/parametric (8).png" > <br></span>
+
+
+                        Now we can make the shape we want for the pressfit connection. I wanted to make a square so I chose the rectangle component from the grasshopper and then brought it to Rhino. For choosing the rectangle component Double click << Rectangle. This will make a rectangle component which by default draws at the origin in rhino. The rectangle which we have constructed has a default dimension i.e x from -1 to 1 and y from -2 to 2. For making it parametric we need a Construct Domain component and give it number slider so that we will be able to change the dimension. Now when we connect the domain to x and y coordinates we can find the rectangle and also can change it’s dimension from the slider.  <br>
+                        <span class="image main"><img src="images/week4/parametric (9).png" > <br></span>
+
+
+                        Now we need to map the notch to the geometry we made. For this we need to find the points on the rectangle and join the notch point to it. For finding the points we need to explode the rectangle through the Explode component. Use Horizontal Frame component can be used to set the points. We can set the number on the HFrame component and give a number slider to it. <br>
+                        <span class="image main"><img src="images/week4/parametric (10).png" > <br></span>
+
+
+                         Now we need to map all the notches to the frame we made. For doing this use Orient component. In this component we have to give the geometry that we want to align at at which points. Right click on the component and graft to set the points and mapping the notch to the frame. <br>
+                         <span class="image main"><img src="images/week4/parametric (11).png" > <br></span>
+
+
+
+                         As you can see in the above figure the notches are aligned properly, we can rotate the notches and also change the notch position. I arranged the notches on the corners and moved it to 45 angle.
+
+                         <span class="image main"><img src="images/week4/parametric (12).png" > <br></span>
+
+                          Now we subtract the notch geometry form the frame. We use Region Difference component to do it. By using this we will be able to find the geometry we want. <br>
+
+                          <span class="image main"><img src="images/week4/parametric (13).png" > <br></span>
+
+
+
+                          Now for doing it for the multiple geometry, we need to make an array. I choose to use rectangular array. In this component, we need to give the geometry andthe frame. By default it makes array of 6 so if we want to increase the number we can give a number slider. <br>
+                          <span class="image main"><img src="images/week4/parametric (14).png" > <br></span>
+
+                          Now the geometry we made is of the grasshopper file for bringing it to the rhino file we need to follow some steps. Right click on the Array component and Bake it. This will show a window from where you can choose the layer on which you want to bake it. Now the sketch is ready to be laser cut. Select the portion and export the file. <br>
+
+                          <span class="image main"><img src="images/week4/parametric (15).png" > <br></span>
+                          <span class="image main"><img src="images/week4/parametric (16).png" > <br></span>
+
+
+                          As I was using a 2mm sheet the width of my notch was supposed to be 1.7 mm. So I went to the Rhino and changed the notch width.
+
+                  </div>
                         
 
                            

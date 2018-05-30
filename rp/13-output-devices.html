@@ -47,6 +47,20 @@
 
                   <hr>
                   <!-- week Content  -->
+
+                  This week I made an output device which I was using in my Final project. In my final project I was going to use 6 servo motor, so I decided to make a board having servo motor. I referred Neil’s board for making my board using ATTiny 44.
+
+
+Components I used
+<ol>
+
+<li>LM117 Voltage Regulator</li>
+<li>AVRISP</li>
+<li>ATTiny44</li>
+<li>Capacitor</li>
+<li>Resistor</li>
+<li>2 - 6 pin headers for servo motor</li>
+</ol>
                   <p>
                      The task for this week was of making an output device which I would be using in my Final project. I decided to use ATtiny 44 for controlling a servo. Neil already designed one board for servo as a output device, so I refered the same board and redesign it.
                      <br><br>
@@ -98,6 +112,136 @@
 
                    <!-- week Content  -->
                   <hr>
+
+<div class="box">
+   
+   Output Devices
+
+
+
+
+As it didn’t work with ATTiny 44, I decided to use it with ATTiny45. I found many references of servo motor with ATTiny 45. I design a simple board for 2 servo motors with ATTiny 45.
+
+
+List of components to be used:
+
+
+ATTiny 45
+Capacitor
+Resistor
+AVRISP
+6 pin header for servo motor
+
+I used Eagle to design the schematic.
+
+
+
+Image : ServoSchematic
+
+
+
+
+Servo Board View
+
+
+<br><span class="image main"><img src="images/week13/ServoBoardView.jpg"></span><br>
+
+
+
+
+
+
+
+Milled Board
+
+
+<br><span class="image main"><img src="images/week13/ServoFailMilledBoard.jpg"></span><br>
+
+
+
+
+
+
+I soldered the board but this time also it didn’t work because I made mistake in in the connection. The MOSI pin of the AVRISP did not get connected to the ATtiny’s MOSI.
+
+I made a mistake while making the traces in board view, I didn’t notice the absence of the trace. I fixed the error and made a new board in Eagle.
+
+
+<br><span class="image main"><img src="images/week13/SuccessBoardView.jpg"></span><br>
+
+
+
+
+
+
+
+This time I took care in designing the board and successfully I was able to make the board without any mistake. I milled the board and got properly milled.
+
+
+<br><span class="image main"><img src="images/week13/ServoSuccessMilledBoard.jpg"></span><br>
+
+
+
+
+I soldered the board, this time I didn’t find any difficulty in soldering the boars. I checked the board with multimeter, everything was alright.
+
+
+<br><span class="image main"><img src="images/week13/ServoSuccessSolderedBoard.jpg"></span><br>
+
+
+
+
+Next challenge was to program the board. For code, I refered Viraj Gandhi’s website.
+
+First, I  tested the code for one motor and then attached both the motors.
+
+
+
+<pre><code>
+   #include <SoftwareSerial.h>
+
+#define RX   1  
+#define TX   0
+SoftwareSerial Serial(RX, TX);
+void setup() {
+   pinMode(3, OUTPUT);
+     pinMode(0, OUTPUT);
+}
+void loop()
+{
+   for (int i = 0; i < 180; ++i) {
+      digitalWrite(3, HIGH);
+      delayMicroseconds(1000);
+      digitalWrite(3, LOW);
+      delayMicroseconds(1000);
+       digitalWrite(0, HIGH);
+      delayMicroseconds(2000);
+      digitalWrite(0, LOW);
+      delayMicroseconds(1800);
+    }
+     delay(2000);
+         for (int i = 0; i < 180; ++i) {
+      digitalWrite(3, HIGH);
+      delayMicroseconds(1500);
+      digitalWrite(3, LOW);
+            delayMicroseconds(1800);
+        digitalWrite(0, HIGH);
+      delayMicroseconds(1500);
+      digitalWrite(0, LOW);
+      delayMicroseconds(1800);
+}
+}</code></pre>
+
+</div>
+
+
+<h2>Video of Outpuy | 2 servo working with board</h2>
+
+<div class="box">
+   <center>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/d9wRa9lpIPc?start=3" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
+</div>
+
 
                 
                             </section>
