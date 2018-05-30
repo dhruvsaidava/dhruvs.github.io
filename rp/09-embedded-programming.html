@@ -44,14 +44,39 @@
                   <!-- Content -->
                   <h2 id="content"><a href="http://academy.cba.mit.edu/classes/principles_practices/index.html">Fab Academy 2018 | Archive</a></h2>
                   
-                  <h2>Overview</h2>
+                  <h2>Embedded Programming</h2>
                   <div class="box">
-                  <p>This week I programmed the board which I made in my electronics design week . I have practised programming with arduino board but programming Attiny board was new and interesting. For programming the board with our computer we need to make our board talk with the computer i.e transfer the data from computer to board and vice versa. First of all we need to understand the ATtiny 45 IC pinout and 
-                     <a href="http://www.farnell.com/datasheets/1698186.pdf" target="_blank">Datasheet</a> properly.</p>
-                    
 
-                    <p> For programming any board we need to include these pins in our board.
+
+This week I programmed the board which I made in my  electronics design week. I havepractised programming with arduino board but programming Attiny board was new and interesting.
+<br>
+
+For programming the board with our computer we need to make our board talk with the computer i.e transfer the data from computer to board and vice versa.
+<br>
+
+
+First of all we need to understand the ATtiny 45 IC pinout and Datasheet properly.
+<br>
+
+
+Image of ATtiny Pinout
+
+
+
+
+
+
+
+
+
+Understanding the pins of AVRISP
+
+
+
+For programming any board we need to include these pins in our board.
 Some notes to understand the ISP
+<br>
+<br>
 <ol>  
 <li>MOSI : Master out Slave in - This pin is used to transfer data from computer to the microprocessor</li>
 <li>MISO : Master in Slave out - This pin is used to read data from the microprocessor</li>
@@ -61,6 +86,110 @@ Some notes to understand the ISP
 <li>GND : Ground</li>
 </ol>
 
+
+
+Programming using Arduino
+<br>
+<br>
+
+
+Arduino is an open source electronic based software on easy to use hardware and software. First we need to download and install the arduino software. For using ATtiny 45 we need to install the ATtiny board from the Preferences tab in the Arduino Software.
+<br>
+<br>
+
+Add the URL in “Additional Boards Manager URL”.
+<br>
+<br>
+
+
+https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+Now go to Tools << Board << Board Manager and install the ATtiny board.
+<br>
+
+
+
+
+
+
+
+
+
+Now you can see the ATtiny board
+<br>
+<br>
+
+
+
+
+3. Now for programming, I used the hello echo board which I made in the electronics            production week. I connected the AVRISP headers of both the boards for programming and added the code to the software.
+<br>
+<br>
+
+
+Image of connection of the ISP headers
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+<pre><code>
+      const int buttonPin = 2;      // the number of the pushbutton pin
+      const int GreenLed =  3;
+      const int RedLed =  4;        // the number of the LED pin
+// variables will change:
+
+      int buttonState = 0;         // variable for reading the pushbutton status
+
+      void setup() {
+
+// initialize the LED pin as an output:
+        pinMode(GreenLed, OUTPUT);
+        pinMode(ledPin, OUTPUT);
+// initialize the pushbutton pin as an input:
+        pinMode(buttonPin2, INPUT);
+}
+
+   
+      void loop() {
+// read the state of the pushbutton value:
+        buttonState = digitalRead(buttonPin);
+// check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+        if (buttonState == HIGH) {
+// turn LED on:
+        digitalWrite(GreenLed, HIGH);
+      } else {
+// turn LED off:
+        digitalWrite(RedLed, LOW);
+  }
+}
+</code></pre>
+
+
+
+
+Video1
+
+Video2
                     </p>
                         
                       </div>
